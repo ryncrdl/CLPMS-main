@@ -215,10 +215,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Connections\Connection.vb" />
-    <Compile Include="DASHBOARD.Designer.vb">
+    <Compile Include="Features\Dashboard\DASHBOARD.Designer.vb">
       <DependentUpon>DASHBOARD.vb</DependentUpon>
     </Compile>
-    <Compile Include="DASHBOARD.vb">
+    <Compile Include="Features\Dashboard\DASHBOARD.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Features\Lessee\LESSEE.Designer.vb">
@@ -282,10 +282,10 @@
     <Compile Include="Features\Properties\PROPERTYMANAGEMENTADD.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONFIRMPASS.Designer.vb">
+    <Compile Include="Features\CONFIRMPASS.Designer.vb">
       <DependentUpon>CONFIRMPASS.vb</DependentUpon>
     </Compile>
-    <Compile Include="CONFIRMPASS.vb">
+    <Compile Include="Features\CONFIRMPASS.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AppConfig\SwitchingPanels.vb" />
@@ -302,7 +302,7 @@
     <EmbeddedResource Include="Features\Archive\ARCHIVEFILES.resx">
       <DependentUpon>ARCHIVEFILES.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DASHBOARD.resx">
+    <EmbeddedResource Include="Features\Dashboard\DASHBOARD.resx">
       <DependentUpon>DASHBOARD.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Features\Lessee\LESSEE.resx">
@@ -332,7 +332,7 @@
     <EmbeddedResource Include="Features\Properties\PROPERTYMANAGEMENTADD.resx">
       <DependentUpon>PROPERTYMANAGEMENTADD.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONFIRMPASS.resx">
+    <EmbeddedResource Include="Features\CONFIRMPASS.resx">
       <DependentUpon>CONFIRMPASS.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

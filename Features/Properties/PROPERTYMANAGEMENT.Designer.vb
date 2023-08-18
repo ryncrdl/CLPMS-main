@@ -39,18 +39,18 @@ Partial Class PROPERTYMANAGEMENT
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtdate = New MetroFramework.Controls.MetroDateTime()
         Me.TableProperty = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SquareMeter = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Camenities = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Description = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Permit = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.clDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Shapes1 = New Guna.UI2.WinForms.Guna2Shapes()
         Me.BtnRemove = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.BtnUpdate = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SquareMeter = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Camenities = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Description = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Permit = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.clDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.TableProperty, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -351,48 +351,6 @@ Partial Class PROPERTYMANAGEMENT
         Me.TableProperty.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TableProperty.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
-        'ID
-        '
-        Me.ID.HeaderText = "ID"
-        Me.ID.Name = "ID"
-        Me.ID.ReadOnly = True
-        Me.ID.Width = 41
-        '
-        'SquareMeter
-        '
-        Me.SquareMeter.HeaderText = "Square Meter"
-        Me.SquareMeter.Name = "SquareMeter"
-        Me.SquareMeter.ReadOnly = True
-        Me.SquareMeter.Width = 86
-        '
-        'Camenities
-        '
-        Me.Camenities.HeaderText = "Amenities"
-        Me.Camenities.Name = "Camenities"
-        Me.Camenities.ReadOnly = True
-        Me.Camenities.Width = 75
-        '
-        'Description
-        '
-        Me.Description.HeaderText = "Description"
-        Me.Description.Name = "Description"
-        Me.Description.ReadOnly = True
-        Me.Description.Width = 83
-        '
-        'Permit
-        '
-        Me.Permit.HeaderText = "Permit"
-        Me.Permit.Name = "Permit"
-        Me.Permit.ReadOnly = True
-        Me.Permit.Width = 59
-        '
-        'clDate
-        '
-        Me.clDate.HeaderText = "Date"
-        Me.clDate.Name = "clDate"
-        Me.clDate.ReadOnly = True
-        Me.clDate.Width = 53
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -491,6 +449,49 @@ Partial Class PROPERTYMANAGEMENT
         Me.Guna2Button1.TabIndex = 252
         Me.Guna2Button1.Text = "Add List"
         Me.Guna2Button1.UseTransparentBackground = True
+        '
+        'ID
+        '
+        Me.ID.HeaderText = "ID"
+        Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
+        Me.ID.Visible = False
+        Me.ID.Width = 41
+        '
+        'SquareMeter
+        '
+        Me.SquareMeter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.SquareMeter.HeaderText = "Square Meter"
+        Me.SquareMeter.Name = "SquareMeter"
+        Me.SquareMeter.ReadOnly = True
+        '
+        'Camenities
+        '
+        Me.Camenities.HeaderText = "Amenities"
+        Me.Camenities.Name = "Camenities"
+        Me.Camenities.ReadOnly = True
+        Me.Camenities.Width = 75
+        '
+        'Description
+        '
+        Me.Description.HeaderText = "Description"
+        Me.Description.Name = "Description"
+        Me.Description.ReadOnly = True
+        Me.Description.Width = 83
+        '
+        'Permit
+        '
+        Me.Permit.HeaderText = "Permit"
+        Me.Permit.Name = "Permit"
+        Me.Permit.ReadOnly = True
+        Me.Permit.Width = 59
+        '
+        'clDate
+        '
+        Me.clDate.HeaderText = "Date"
+        Me.clDate.Name = "clDate"
+        Me.clDate.ReadOnly = True
+        Me.clDate.Width = 53
         '
         'PROPERTYMANAGEMENT
         '
