@@ -194,24 +194,24 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admins\ADMINHOME.Designer.vb">
+    <Compile Include="Features\Admins\ADMINHOME.Designer.vb">
       <DependentUpon>ADMINHOME.vb</DependentUpon>
     </Compile>
-    <Compile Include="Admins\ADMINHOME.vb">
+    <Compile Include="Features\Admins\ADMINHOME.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admins\ADMINREGISISTRATION.Designer.vb">
+    <Compile Include="Features\Admins\ADMINREGISISTRATION.Designer.vb">
       <DependentUpon>ADMINREGISISTRATION.vb</DependentUpon>
     </Compile>
-    <Compile Include="Admins\ADMINREGISISTRATION.vb">
+    <Compile Include="Features\Admins\ADMINREGISISTRATION.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admins\Modules\AdminControllers.vb" />
-    <Compile Include="Admins\Modules\AdminModels.vb" />
-    <Compile Include="Archive\ARCHIVEFILES.Designer.vb">
+    <Compile Include="Features\Admins\Modules\AdminControllers.vb" />
+    <Compile Include="Features\Admins\Modules\AdminModels.vb" />
+    <Compile Include="Features\Archive\ARCHIVEFILES.Designer.vb">
       <DependentUpon>ARCHIVEFILES.vb</DependentUpon>
     </Compile>
-    <Compile Include="Archive\ARCHIVEFILES.vb">
+    <Compile Include="Features\Archive\ARCHIVEFILES.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Connections\Connection.vb" />
@@ -221,16 +221,16 @@
     <Compile Include="DASHBOARD.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lessee\LESSEE.Designer.vb">
+    <Compile Include="Features\Lessee\LESSEE.Designer.vb">
       <DependentUpon>LESSEE.vb</DependentUpon>
     </Compile>
-    <Compile Include="Lessee\LESSEE.vb">
+    <Compile Include="Features\Lessee\LESSEE.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lessor\LESSORACCOUNT.Designer.vb">
+    <Compile Include="Features\Lessor\LESSORACCOUNT.Designer.vb">
       <DependentUpon>LESSORACCOUNT.vb</DependentUpon>
     </Compile>
-    <Compile Include="Lessor\LESSORACCOUNT.vb">
+    <Compile Include="Features\Lessor\LESSORACCOUNT.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AppConfig\LOAD.vb">
@@ -240,16 +240,16 @@
       <DependentUpon>LOAD.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LOGIN.Designer.vb">
+    <Compile Include="Features\Login\LOGIN.Designer.vb">
       <DependentUpon>LOGIN.vb</DependentUpon>
     </Compile>
-    <Compile Include="LOGIN.vb">
+    <Compile Include="Features\Login\LOGIN.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Manager\MANAGERACCOUNT.Designer.vb">
+    <Compile Include="Features\Manager\MANAGERACCOUNT.Designer.vb">
       <DependentUpon>MANAGERACCOUNT.vb</DependentUpon>
     </Compile>
-    <Compile Include="Manager\MANAGERACCOUNT.vb">
+    <Compile Include="Features\Manager\MANAGERACCOUNT.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -268,18 +268,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Properties\Modules\PropertyControllers.vb" />
-    <Compile Include="Properties\Modules\PropertyModels.vb" />
-    <Compile Include="Properties\PROPERTYMANAGEMENT.Designer.vb">
+    <Compile Include="Features\Properties\Modules\PropertyControllers.vb" />
+    <Compile Include="Features\Properties\Modules\PropertyModels.vb" />
+    <Compile Include="Features\Properties\PROPERTYMANAGEMENT.Designer.vb">
       <DependentUpon>PROPERTYMANAGEMENT.vb</DependentUpon>
     </Compile>
-    <Compile Include="Properties\PROPERTYMANAGEMENT.vb">
+    <Compile Include="Features\Properties\PROPERTYMANAGEMENT.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Properties\PROPERTYMANAGEMENTADD.Designer.vb">
+    <Compile Include="Features\Properties\PROPERTYMANAGEMENTADD.Designer.vb">
       <DependentUpon>PROPERTYMANAGEMENTADD.vb</DependentUpon>
     </Compile>
-    <Compile Include="Properties\PROPERTYMANAGEMENTADD.vb">
+    <Compile Include="Features\Properties\PROPERTYMANAGEMENTADD.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CONFIRMPASS.Designer.vb">
@@ -293,31 +293,31 @@
     <Compile Include="Validations\Validation2.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Admins\ADMINHOME.resx">
+    <EmbeddedResource Include="Features\Admins\ADMINHOME.resx">
       <DependentUpon>ADMINHOME.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admins\ADMINREGISISTRATION.resx">
+    <EmbeddedResource Include="Features\Admins\ADMINREGISISTRATION.resx">
       <DependentUpon>ADMINREGISISTRATION.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Archive\ARCHIVEFILES.resx">
+    <EmbeddedResource Include="Features\Archive\ARCHIVEFILES.resx">
       <DependentUpon>ARCHIVEFILES.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DASHBOARD.resx">
       <DependentUpon>DASHBOARD.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lessee\LESSEE.resx">
+    <EmbeddedResource Include="Features\Lessee\LESSEE.resx">
       <DependentUpon>LESSEE.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lessor\LESSORACCOUNT.resx">
+    <EmbeddedResource Include="Features\Lessor\LESSORACCOUNT.resx">
       <DependentUpon>LESSORACCOUNT.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppConfig\LOAD.resx">
       <DependentUpon>LOAD.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LOGIN.resx">
+    <EmbeddedResource Include="Features\Login\LOGIN.resx">
       <DependentUpon>LOGIN.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manager\MANAGERACCOUNT.resx">
+    <EmbeddedResource Include="Features\Manager\MANAGERACCOUNT.resx">
       <DependentUpon>MANAGERACCOUNT.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -326,10 +326,10 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\PROPERTYMANAGEMENT.resx">
+    <EmbeddedResource Include="Features\Properties\PROPERTYMANAGEMENT.resx">
       <DependentUpon>PROPERTYMANAGEMENT.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\PROPERTYMANAGEMENTADD.resx">
+    <EmbeddedResource Include="Features\Properties\PROPERTYMANAGEMENTADD.resx">
       <DependentUpon>PROPERTYMANAGEMENTADD.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CONFIRMPASS.resx">
