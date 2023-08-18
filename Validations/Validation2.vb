@@ -1,5 +1,5 @@
 ﻿Imports MetroFramework.Controls
-Imports CLPMS.Validation1
+
 Module Validation2
     Public Function ValidateFieldsNotEmptyAdmin(data As List(Of MetroTextBox), ByRef validData As Boolean)
         ' Check if any of the fields are empty or null

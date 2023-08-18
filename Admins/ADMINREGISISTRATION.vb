@@ -15,7 +15,7 @@ Public Class ADMINREGISISTRATION
 
     Public Sub New()
         InitializeComponent()
-        _database = Connection1.GetMongoDatabase()
+        _database = Connection.GetMongoDatabase()
         'columnsName = New List(Of String) From {"ID", "Name", "Age", "Email", "Contact", "Address", "Username", "Password"}
         ' If Connection1.IsConnected() Then
         'MessageBox.Show("Connected to MongoDB successfully!", "Connection Status", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -69,7 +69,7 @@ Public Class ADMINREGISISTRATION
                 }
 
                 If Integer.TryParse(txtage.Text, admin.Age) Then
-                    Dim adminsCollection = Connection1.GetAdminsCollection()
+                    Dim adminsCollection = Connection.GetAdminsCollection()
                     adminsCollection.InsertOne(admin)
 
                     MessageBox.Show("Admin added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -98,7 +98,7 @@ Public Class ADMINREGISISTRATION
         dataTable.Columns.Add("Username", GetType(String))
         dataTable.Columns.Add("Password", GetType(String))
 
-        Dim adminsCollection = Connection1.GetAdminsCollection()
+        Dim adminsCollection = Connection.GetAdminsCollection()
         Dim adminsCursor = adminsCollection.Find(FilterDefinition(Of Admin).Empty)
         Dim admins = adminsCursor.ToList()
 
@@ -122,7 +122,7 @@ Public Class ADMINREGISISTRATION
             Dim adminID As String = selectedRow.Cells("ID").Value.ToString()
 
             ' Retrieve the existing admin data from MongoDB
-            Dim adminsCollection = Connection1.GetAdminsCollection()
+            Dim adminsCollection = Connection.GetAdminsCollection()
 
             ' Use the adminID as a string directly in the lambda expression
             Dim filter = Builders(Of Admin).Filter.Eq(Function(a) a.ID, adminID)
@@ -175,7 +175,7 @@ Public Class ADMINREGISISTRATION
 
                     If confirmationResult = DialogResult.Yes Then
                         ' Retrieve the existing admin data from MongoDB
-                        Dim adminsCollection = Connection1.GetAdminsCollection()
+                        Dim adminsCollection = Connection.GetAdminsCollection()
 
                         ' Use the adminID as a string directly in the lambda expression
                         Dim filter = Builders(Of ADMINREGISISTRATION.Admin).Filter.Eq(Function(a) a.ID, adminID)

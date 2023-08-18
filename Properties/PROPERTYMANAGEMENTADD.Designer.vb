@@ -44,11 +44,11 @@ Partial Class PROPERTYMANAGEMENTADD
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Black
         Me.Label9.Location = New System.Drawing.Point(169, 11)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(138, 28)
+        Me.Label9.Size = New System.Drawing.Size(120, 20)
         Me.Label9.TabIndex = 118
         Me.Label9.Text = "Create Property"
         '
@@ -69,7 +69,7 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(26, 306)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(109, 16)
+        Me.Label6.Size = New System.Drawing.Size(108, 16)
         Me.Label6.TabIndex = 163
         Me.Label6.Text = "Date of Establish"
         '
@@ -110,7 +110,7 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(26, 244)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(46, 16)
+        Me.Label7.Size = New System.Drawing.Size(45, 16)
         Me.Label7.TabIndex = 161
         Me.Label7.Text = "Permit"
         '
@@ -151,7 +151,7 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(26, 185)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(76, 16)
+        Me.Label4.Size = New System.Drawing.Size(75, 16)
         Me.Label4.TabIndex = 159
         Me.Label4.Text = "Description"
         '
@@ -162,7 +162,7 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(26, 125)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(67, 16)
+        Me.Label5.Size = New System.Drawing.Size(66, 16)
         Me.Label5.TabIndex = 157
         Me.Label5.Text = "Amenities"
         '
@@ -233,7 +233,7 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(26, 63)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(89, 16)
+        Me.Label8.Size = New System.Drawing.Size(88, 16)
         Me.Label8.TabIndex = 155
         Me.Label8.Text = "Square meter"
         '
@@ -287,6 +287,7 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.txtdate.Name = "txtdate"
         Me.txtdate.Size = New System.Drawing.Size(336, 29)
         Me.txtdate.TabIndex = 166
+        Me.txtdate.Value = New Date(2023, 8, 18, 0, 0, 0, 0)
         '
         'PROPERTYMANAGEMENTADD
         '

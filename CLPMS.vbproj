@@ -194,47 +194,49 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ADMINHOME.Designer.vb">
+    <Compile Include="Admins\ADMINHOME.Designer.vb">
       <DependentUpon>ADMINHOME.vb</DependentUpon>
     </Compile>
-    <Compile Include="ADMINHOME.vb">
+    <Compile Include="Admins\ADMINHOME.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ADMINREGISISTRATION.Designer.vb">
+    <Compile Include="Admins\ADMINREGISISTRATION.Designer.vb">
       <DependentUpon>ADMINREGISISTRATION.vb</DependentUpon>
     </Compile>
-    <Compile Include="ADMINREGISISTRATION.vb">
+    <Compile Include="Admins\ADMINREGISISTRATION.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ARCHIVEFILES.Designer.vb">
+    <Compile Include="Admins\Modules\AdminControllers.vb" />
+    <Compile Include="Admins\Modules\AdminModels.vb" />
+    <Compile Include="Archive\ARCHIVEFILES.Designer.vb">
       <DependentUpon>ARCHIVEFILES.vb</DependentUpon>
     </Compile>
-    <Compile Include="ARCHIVEFILES.vb">
+    <Compile Include="Archive\ARCHIVEFILES.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Connection1.vb" />
+    <Compile Include="Connections\Connection.vb" />
     <Compile Include="DASHBOARD.Designer.vb">
       <DependentUpon>DASHBOARD.vb</DependentUpon>
     </Compile>
     <Compile Include="DASHBOARD.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LESSEE.Designer.vb">
+    <Compile Include="Lessee\LESSEE.Designer.vb">
       <DependentUpon>LESSEE.vb</DependentUpon>
     </Compile>
-    <Compile Include="LESSEE.vb">
+    <Compile Include="Lessee\LESSEE.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LESSORACCOUNT.Designer.vb">
+    <Compile Include="Lessor\LESSORACCOUNT.Designer.vb">
       <DependentUpon>LESSORACCOUNT.vb</DependentUpon>
     </Compile>
-    <Compile Include="LESSORACCOUNT.vb">
+    <Compile Include="Lessor\LESSORACCOUNT.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LOAD.vb">
+    <Compile Include="AppConfig\LOAD.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LOAD.Designer.vb">
+    <Compile Include="AppConfig\LOAD.Designer.vb">
       <DependentUpon>LOAD.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -244,10 +246,10 @@
     <Compile Include="LOGIN.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MANAGERACCOUNT.Designer.vb">
+    <Compile Include="Manager\MANAGERACCOUNT.Designer.vb">
       <DependentUpon>MANAGERACCOUNT.vb</DependentUpon>
     </Compile>
-    <Compile Include="MANAGERACCOUNT.vb">
+    <Compile Include="Manager\MANAGERACCOUNT.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -266,16 +268,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PROPERTYMANAGEMENT.Designer.vb">
+    <Compile Include="Properties\Modules\PropertyControllers.vb" />
+    <Compile Include="Properties\Modules\PropertyModels.vb" />
+    <Compile Include="Properties\PROPERTYMANAGEMENT.Designer.vb">
       <DependentUpon>PROPERTYMANAGEMENT.vb</DependentUpon>
     </Compile>
-    <Compile Include="PROPERTYMANAGEMENT.vb">
+    <Compile Include="Properties\PROPERTYMANAGEMENT.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PROPERTYMANAGEMENTADD.Designer.vb">
+    <Compile Include="Properties\PROPERTYMANAGEMENTADD.Designer.vb">
       <DependentUpon>PROPERTYMANAGEMENTADD.vb</DependentUpon>
     </Compile>
-    <Compile Include="PROPERTYMANAGEMENTADD.vb">
+    <Compile Include="Properties\PROPERTYMANAGEMENTADD.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CONFIRMPASS.Designer.vb">
@@ -284,36 +288,36 @@
     <Compile Include="CONFIRMPASS.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SwitchingPanels.vb" />
-    <Compile Include="Validation1.vb" />
-    <Compile Include="Validation2.vb" />
+    <Compile Include="AppConfig\SwitchingPanels.vb" />
+    <Compile Include="Validations\Validation1.vb" />
+    <Compile Include="Validations\Validation2.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ADMINHOME.resx">
+    <EmbeddedResource Include="Admins\ADMINHOME.resx">
       <DependentUpon>ADMINHOME.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ADMINREGISISTRATION.resx">
+    <EmbeddedResource Include="Admins\ADMINREGISISTRATION.resx">
       <DependentUpon>ADMINREGISISTRATION.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ARCHIVEFILES.resx">
+    <EmbeddedResource Include="Archive\ARCHIVEFILES.resx">
       <DependentUpon>ARCHIVEFILES.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DASHBOARD.resx">
       <DependentUpon>DASHBOARD.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LESSEE.resx">
+    <EmbeddedResource Include="Lessee\LESSEE.resx">
       <DependentUpon>LESSEE.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LESSORACCOUNT.resx">
+    <EmbeddedResource Include="Lessor\LESSORACCOUNT.resx">
       <DependentUpon>LESSORACCOUNT.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LOAD.resx">
+    <EmbeddedResource Include="AppConfig\LOAD.resx">
       <DependentUpon>LOAD.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MANAGERACCOUNT.resx">
+    <EmbeddedResource Include="Manager\MANAGERACCOUNT.resx">
       <DependentUpon>MANAGERACCOUNT.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -322,10 +326,10 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="PROPERTYMANAGEMENT.resx">
+    <EmbeddedResource Include="Properties\PROPERTYMANAGEMENT.resx">
       <DependentUpon>PROPERTYMANAGEMENT.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PROPERTYMANAGEMENTADD.resx">
+    <EmbeddedResource Include="Properties\PROPERTYMANAGEMENTADD.resx">
       <DependentUpon>PROPERTYMANAGEMENTADD.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CONFIRMPASS.resx">
@@ -445,6 +449,7 @@
     <None Include="Resources\dashboard %281%29.png" />
     <None Include="Resources\bg.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="packages\MongoDB.Libmongocrypt.1.8.0\build\MongoDB.Libmongocrypt.targets" Condition="Exists('packages\MongoDB.Libmongocrypt.1.8.0\build\MongoDB.Libmongocrypt.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

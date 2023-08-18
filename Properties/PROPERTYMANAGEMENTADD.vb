@@ -1,14 +1,7 @@
-﻿Imports CLPMS.ADMINREGISISTRATION
-Imports Guna.UI2.WinForms
-Imports MetroFramework.Controls
-Imports MongoDB.Bson
-Imports MongoDB.Bson.Serialization.Attributes
-
-Imports CLPMS.PROPERTYMANAGEMENT
+﻿Imports MetroFramework.Controls
 Public Class PROPERTYMANAGEMENTADD
-    'Private MetroTextBox As MetroFramework.Controls.MetroTextBox
     Private data As List(Of MetroTextBox)
-
+    Dim properySet As New PropertyM()
 
     Private Sub BtnAdd_Click(sender As Object, e As EventArgs) Handles BtnAdd.Click
         Dim validData As Boolean = True
@@ -34,14 +27,16 @@ Public Class PROPERTYMANAGEMENTADD
                     .EstablishDate = establishDate
                 }
 
-                        Dim propertiesCollection = Connection1.GetPropertiesCollection()
+                        Dim propertiesCollection = Connection.GetPropertiesCollection()
                         propertiesCollection.InsertOne(properties)
 
                         MessageBox.Show("Property added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         ClearTextBox(data)
                         Me.Close()
-                        ' Refresh the DataGridView with the latest data
-                        PROPERTYMANAGEMENT.Guna2DataGridView1.DataSource = PROPERTYMANAGEMENT.GetPropertiesData()
+                        ' Refresh the DataGridView with the latest data               
+                        AddPropertyDataRow(properties, PROPERTYMANAGEMENT.TableProperty)
+
+                        'GetPropertiesData(PROPERTYMANAGEMENT.TableProperty)
                     Else
                         MessageBox.Show("Please enter a valid date.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     End If

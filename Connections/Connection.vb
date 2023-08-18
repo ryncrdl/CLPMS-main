@@ -3,7 +3,7 @@ Imports CLPMS.ADMINREGISISTRATION
 Imports CLPMS.PROPERTYMANAGEMENT
 Imports MongoDB.Driver
 
-Module Connection1
+Module Connection
     Public ReadOnly ConnectionString As String = "mongodb+srv://johnjericpalima11:johnjericpalima11@clpmsdb.wo66qzz.mongodb.net/CLPMSdb?retryWrites=true&w=majority"
     Private ReadOnly DatabaseName As String = "CLPMSdb"
 
@@ -27,12 +27,6 @@ Module Connection1
         Dim collectionName As String = GetType(T).Name
         Return Database.GetCollection(Of T)(collectionName)
     End Function
-
-    'Admin
-    '   Public Function GetAdminsCollection() As IMongoCollection(Of GetCollectionName)
-    'Dim collectionName As String = "Admins"
-    ' Database.GetCollection(Of ADMINREGISISTRATION.Admin)(collectionName)
-    'End Function
 
     'Admin  
     Public Function GetAdminsCollection() As IMongoCollection(Of Admin)

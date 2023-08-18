@@ -30,7 +30,7 @@ Public Class LOGIN
                 Dim password As String = Guna2TextBox2.Text
 
                 ' Retrieve the existing admin data from MongoDB
-                Dim adminsCollection = Connection1.GetAdminsCollection()
+                Dim adminsCollection = Connection.GetAdminsCollection()
 
                 ' Build the filter to find the admin with the specified username and password
                 Dim filter = Builders(Of ADMINREGISISTRATION.Admin).Filter.And(
