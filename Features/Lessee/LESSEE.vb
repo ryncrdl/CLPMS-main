@@ -38,10 +38,6 @@ Public Class LESSEE
         SwitchPanel(DASHBOARD.Panel2, PROPERTYMANAGEMENT)
     End Sub
 
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
-
-    End Sub
-
     Private Sub BtnAdd_Click(sender As Object, e As EventArgs) Handles BtnUpdt.Click
         ValidateFieldsNotEmpty(data)
     End Sub
@@ -50,11 +46,12 @@ Public Class LESSEE
         DeleteData(txtid, data)
     End Sub
 
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-        SwitchPanel(DASHBOARD.Panel2, PROPERTYMANAGEMENT)
+
+    Private Sub BtnClear_Click_1(sender As Object, e As EventArgs) Handles BtnClear.Click
+        ClearTextBox(data)
     End Sub
 
-    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
-        ClearTextBox(data)
+    Private Sub BtnViewProperty_Click(sender As Object, e As EventArgs) Handles BtnViewProperty.Click
+        SwitchPanel(DASHBOARD.Panel2, PROPERTYMANAGEMENT)
     End Sub
 End Class

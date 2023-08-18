@@ -1,10 +1,12 @@
-﻿Public Class MANAGERACCOUNT
-
+﻿Imports MetroFramework.Controls
+Public Class MANAGERACCOUNT
+    Private data As List(Of MetroTextBox)
     Private Sub MANAGERACCOUNT_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        data = New List(Of MetroTextBox) From {txtname, txtage, txtemail, txtcontact, txtaddress, txtproperties, txtusername, txtpassword}
     End Sub
 
-    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs)
-
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles BtnClear.Click
+        ClearTextBox(data)
     End Sub
+
 End Class

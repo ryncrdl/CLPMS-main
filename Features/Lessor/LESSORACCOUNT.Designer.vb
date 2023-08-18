@@ -22,9 +22,9 @@ Partial Class LESSORACCOUNT
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.MetroTextBox1 = New MetroFramework.Controls.MetroTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -47,34 +47,34 @@ Partial Class LESSORACCOUNT
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Shapes1 = New Guna.UI2.WinForms.Guna2Shapes()
         Me.BtnRemove = New Guna.UI2.WinForms.Guna2Button()
-        Me.BtnAdmin = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.BtnViewProperty = New Guna.UI2.WinForms.Guna2Button()
+        Me.BtnUpdate = New Guna.UI2.WinForms.Guna2Button()
         Me.BtnClear = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2DataGridView1
         '
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.Guna2DataGridView1.ColumnHeadersHeight = 4
         Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.Location = New System.Drawing.Point(468, 58)
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
@@ -179,10 +179,10 @@ Partial Class LESSORACCOUNT
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(39, 428)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(74, 23)
+        Me.Label9.Size = New System.Drawing.Size(67, 16)
         Me.Label9.TabIndex = 182
         Me.Label9.Text = "Password"
         '
@@ -220,10 +220,10 @@ Partial Class LESSORACCOUNT
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(39, 383)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(77, 23)
+        Me.Label10.Size = New System.Drawing.Size(70, 16)
         Me.Label10.TabIndex = 180
         Me.Label10.Text = "Username"
         '
@@ -261,10 +261,10 @@ Partial Class LESSORACCOUNT
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(39, 341)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(76, 23)
+        Me.Label7.Size = New System.Drawing.Size(69, 16)
         Me.Label7.TabIndex = 178
         Me.Label7.Text = "Properties"
         '
@@ -302,10 +302,10 @@ Partial Class LESSORACCOUNT
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(39, 296)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(64, 23)
+        Me.Label6.Size = New System.Drawing.Size(58, 16)
         Me.Label6.TabIndex = 176
         Me.Label6.Text = "Address"
         '
@@ -343,10 +343,10 @@ Partial Class LESSORACCOUNT
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(42, 251)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 23)
+        Me.Label2.Size = New System.Drawing.Size(52, 16)
         Me.Label2.TabIndex = 174
         Me.Label2.Text = "Contact"
         '
@@ -384,10 +384,10 @@ Partial Class LESSORACCOUNT
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(43, 205)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(45, 23)
+        Me.Label4.Size = New System.Drawing.Size(41, 16)
         Me.Label4.TabIndex = 172
         Me.Label4.Text = "Email"
         '
@@ -395,10 +395,10 @@ Partial Class LESSORACCOUNT
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(50, 162)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(36, 23)
+        Me.Label5.Size = New System.Drawing.Size(32, 16)
         Me.Label5.TabIndex = 170
         Me.Label5.Text = "Age"
         '
@@ -466,10 +466,10 @@ Partial Class LESSORACCOUNT
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(43, 115)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(49, 23)
+        Me.Label8.Size = New System.Drawing.Size(44, 16)
         Me.Label8.TabIndex = 168
         Me.Label8.Text = "Name"
         '
@@ -477,11 +477,11 @@ Partial Class LESSORACCOUNT
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.SkyBlue
-        Me.Label1.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Location = New System.Drawing.Point(80, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(132, 28)
+        Me.Label1.Size = New System.Drawing.Size(120, 20)
         Me.Label1.TabIndex = 222
         Me.Label1.Text = "Lessor Account"
         '
@@ -518,41 +518,41 @@ Partial Class LESSORACCOUNT
         Me.BtnRemove.Text = "Remove Lessor"
         Me.BtnRemove.UseTransparentBackground = True
         '
-        'BtnAdmin
+        'BtnViewProperty
         '
-        Me.BtnAdmin.BackColor = System.Drawing.Color.Transparent
-        Me.BtnAdmin.BorderRadius = 20
-        Me.BtnAdmin.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.BtnAdmin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.BtnAdmin.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BtnAdmin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BtnAdmin.FillColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BtnAdmin.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.BtnAdmin.ForeColor = System.Drawing.Color.White
-        Me.BtnAdmin.Location = New System.Drawing.Point(270, 522)
-        Me.BtnAdmin.Name = "BtnAdmin"
-        Me.BtnAdmin.Size = New System.Drawing.Size(185, 40)
-        Me.BtnAdmin.TabIndex = 225
-        Me.BtnAdmin.Text = "View Property"
-        Me.BtnAdmin.UseTransparentBackground = True
+        Me.BtnViewProperty.BackColor = System.Drawing.Color.Transparent
+        Me.BtnViewProperty.BorderRadius = 20
+        Me.BtnViewProperty.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BtnViewProperty.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BtnViewProperty.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BtnViewProperty.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BtnViewProperty.FillColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BtnViewProperty.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BtnViewProperty.ForeColor = System.Drawing.Color.White
+        Me.BtnViewProperty.Location = New System.Drawing.Point(270, 522)
+        Me.BtnViewProperty.Name = "BtnViewProperty"
+        Me.BtnViewProperty.Size = New System.Drawing.Size(185, 40)
+        Me.BtnViewProperty.TabIndex = 225
+        Me.BtnViewProperty.Text = "View Property"
+        Me.BtnViewProperty.UseTransparentBackground = True
         '
-        'Guna2Button2
+        'BtnUpdate
         '
-        Me.Guna2Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button2.BorderRadius = 20
-        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.Location = New System.Drawing.Point(50, 522)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(185, 40)
-        Me.Guna2Button2.TabIndex = 224
-        Me.Guna2Button2.Text = "Update Lessor"
-        Me.Guna2Button2.UseTransparentBackground = True
+        Me.BtnUpdate.BackColor = System.Drawing.Color.Transparent
+        Me.BtnUpdate.BorderRadius = 20
+        Me.BtnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BtnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BtnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BtnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BtnUpdate.FillColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BtnUpdate.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BtnUpdate.ForeColor = System.Drawing.Color.White
+        Me.BtnUpdate.Location = New System.Drawing.Point(50, 522)
+        Me.BtnUpdate.Name = "BtnUpdate"
+        Me.BtnUpdate.Size = New System.Drawing.Size(185, 40)
+        Me.BtnUpdate.TabIndex = 224
+        Me.BtnUpdate.Text = "Update Lessor"
+        Me.BtnUpdate.UseTransparentBackground = True
         '
         'BtnClear
         '
@@ -579,8 +579,8 @@ Partial Class LESSORACCOUNT
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(941, 665)
         Me.Controls.Add(Me.BtnRemove)
-        Me.Controls.Add(Me.BtnAdmin)
-        Me.Controls.Add(Me.Guna2Button2)
+        Me.Controls.Add(Me.BtnViewProperty)
+        Me.Controls.Add(Me.BtnUpdate)
         Me.Controls.Add(Me.BtnClear)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Guna2Shapes1)
@@ -633,7 +633,7 @@ Partial Class LESSORACCOUNT
     Friend WithEvents Label1 As Label
     Friend WithEvents Guna2Shapes1 As Guna.UI2.WinForms.Guna2Shapes
     Friend WithEvents BtnRemove As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents BtnAdmin As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents BtnViewProperty As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents BtnUpdate As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BtnClear As Guna.UI2.WinForms.Guna2Button
 End Class

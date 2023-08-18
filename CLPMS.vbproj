@@ -227,6 +227,7 @@
     <Compile Include="Features\Lessee\LESSEE.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Features\Lessee\Modules\Validation.vb" />
     <Compile Include="Features\Lessor\LESSORACCOUNT.Designer.vb">
       <DependentUpon>LESSORACCOUNT.vb</DependentUpon>
     </Compile>
