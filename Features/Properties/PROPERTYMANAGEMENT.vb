@@ -3,12 +3,10 @@ Imports MongoDB.Driver
 
 Public Class PROPERTYMANAGEMENT
     Private data As List(Of MetroTextBox)
-    Dim properySet As New PropertyM()
+    Dim properySet As New properties()
     Private ReadOnly _database As IMongoDatabase
     Private Sub PROPERTYMANAGEMENT_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TableProperty.DataSource = GetPropertiesData()
-        data = New List(Of MetroTextBox) From {square_meter, Amenities, txtdescription, txtpermit}
-        ' AddPropertyDataRow(properySet, TableProperty)
+        data = New List(Of MetroTextBox) From {txtid, txtproperty, txtlessor, txtfloors, txtfloorocc, txtimage}
 
         GetPropertiesData(TableProperty)
     End Sub
@@ -37,11 +35,12 @@ Public Class PROPERTYMANAGEMENT
         If e.RowIndex >= 0 AndAlso e.RowIndex < TableProperty.Rows.Count Then
             ' Get the selected row's data
             Dim selectedRow As DataGridViewRow = TableProperty.Rows(e.RowIndex)
-            square_meter.Text = selectedRow.Cells("SquareMeter").Value.ToString()
-            Amenities.Text = selectedRow.Cells("Camenities").Value.ToString()
-            txtdescription.Text = selectedRow.Cells("Description").Value.ToString()
-            txtpermit.Text = selectedRow.Cells("Permit").Value.ToString()
-            txtdate.Text = selectedRow.Cells("clDate").Value.ToString()
+            txtid.Text = selectedRow.Cells("ID").Value.ToString()
+            txtproperty.Text = selectedRow.Cells("PropertyName").Value.ToString()
+            txtlessor.Text = selectedRow.Cells("Lessor").Value.ToString()
+            txtfloors.Text = selectedRow.Cells("Floors").Value.ToString()
+            txtfloorocc.Text = selectedRow.Cells("FloorOccu").Value.ToString()
+            txtimage.Text = selectedRow.Cells("Image").Value.ToString()
         End If
     End Sub
 
@@ -60,7 +59,7 @@ Public Class PROPERTYMANAGEMENT
                 If confirmationResult = DialogResult.Yes Then
                     Dim propertiesCollection = Connection.GetPropertiesCollection()
 
-                    Dim filter = Builders(Of PropertyM).Filter.Eq(Function(a) a.ID, propertyId)
+                    Dim filter = Builders(Of properties).Filter.Eq(Function(a) a.ID, propertyId)
                     Dim deleteResult = propertiesCollection.DeleteOne(filter)
 
                     If deleteResult.DeletedCount > 0 Then
@@ -82,57 +81,63 @@ Public Class PROPERTYMANAGEMENT
     End Sub
 
     Sub ClearData()
-        square_meter.Clear()
-        Amenities.Clear()
-        txtdescription.Clear()
-        txtpermit.Clear()
-        txtdate.ResetText()
+        txtproperty.Clear()
+        txtlessor.Clear()
+        txtfloors.Clear()
+        txtfloorocc.Clear()
+        txtimage.Clear()
     End Sub
 
     Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles BtnUpdate.Click
         Dim validData As Boolean = True
         ValidatePropertyData(data, validData)
 
-        If (validData) Then
-            Dim selectedRowIndex As Integer = TableProperty.CurrentCell.RowIndex
+        If (TableProperty.Rows.Count > 0) Then
 
-            If selectedRowIndex >= 0 AndAlso TableProperty.Rows.Count > selectedRowIndex Then
-                Dim selectedRow As DataGridViewRow = TableProperty.Rows(selectedRowIndex)
 
-                ' Get the ID of the selected admin from the first cell of the row
-                Dim propertyId As String = selectedRow.Cells("ID").Value.ToString()
+            If (validData) Then
+                Dim selectedRowIndex As Integer = TableProperty.CurrentCell.RowIndex
 
-                ' Retrieve the existing admin data from MongoDB
-                Dim propertiesCollection = Connection.GetPropertiesCollection()
+                If selectedRowIndex >= 0 AndAlso TableProperty.Rows.Count > selectedRowIndex Then
+                    Dim selectedRow As DataGridViewRow = TableProperty.Rows(selectedRowIndex)
 
-                ' Use the adminID as a string directly in the lambda expression
-                Dim filter = Builders(Of PropertyM).Filter.Eq(Function(a) a.ID, propertyId)
-                Dim existingProperty = propertiesCollection.Find(filter).FirstOrDefault()
+                    ' Get the ID of the selected admin from the first cell of the row
+                    Dim propertyId As String = selectedRow.Cells("ID").Value.ToString()
 
-                If existingProperty IsNot Nothing Then
-                    ' Update the Admin object with the data from the textboxes
-                    existingProperty.SquareMeter = square_meter.Text
-                    existingProperty.Amenities = Amenities.Text
-                    existingProperty.Description = txtdescription.Text
-                    existingProperty.Permit = txtpermit.Text
-                    existingProperty.EstablishDate = txtdate.Value
+                    ' Retrieve the existing admin data from MongoDB
+                    Dim propertiesCollection = Connection.GetPropertiesCollection()
 
-                    ' Update the admin data in the MongoDB collection
-                    propertiesCollection.ReplaceOne(filter, existingProperty)
+                    ' Use the adminID as a string directly in the lambda expression
+                    Dim filter = Builders(Of properties).Filter.Eq(Function(a) a.ID, propertyId)
+                    Dim existingProperty = propertiesCollection.Find(filter).FirstOrDefault()
 
-                    MessageBox.Show("Property updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    If existingProperty IsNot Nothing Then
+                        ' Update the Admin object with the data from the textboxes
+                        existingProperty.propertyname = txtproperty.Text
+                        existingProperty.lessor = txtlessor.Text
+                        existingProperty.floors = txtfloors.Text
+                        existingProperty.floorOcu = txtfloorocc.Text
+                        existingProperty.userImage = txtimage.Text
 
-                    TableProperty.Rows.Clear()
-                    GetPropertiesData(TableProperty)
-                    ClearData()
+                        ' Update the admin data in the MongoDB collection
+                        propertiesCollection.ReplaceOne(filter, existingProperty)
+
+                        MessageBox.Show("Property updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                        TableProperty.Rows.Clear()
+                        GetPropertiesData(TableProperty)
+                        ClearData()
+                    Else
+                        MessageBox.Show("Property not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    End If
                 Else
-                    MessageBox.Show("Property not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    MessageBox.Show("Please select a row to update.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End If
-            Else
-                MessageBox.Show("Please select a row to update.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
+        Else
+            MessageBox.Show("Please select a row to update.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
-
-
     End Sub
+
+
 End Class

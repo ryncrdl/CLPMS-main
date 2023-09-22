@@ -227,7 +227,8 @@
     <Compile Include="Features\Lessee\LESSEE.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Features\Lessee\Modules\Validation.vb" />
+    <Compile Include="Features\Lessee\Modules\LesseeControllers.vb" />
+    <Compile Include="Features\Lessee\Modules\LesseeModels.vb" />
     <Compile Include="Features\Lessor\LESSORACCOUNT.Designer.vb">
       <DependentUpon>LESSORACCOUNT.vb</DependentUpon>
     </Compile>
@@ -241,6 +242,8 @@
       <DependentUpon>LOAD.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Features\Lessor\Modules\LessorControllers.vb" />
+    <Compile Include="Features\Lessor\Modules\LessorModels.vb" />
     <Compile Include="Features\Login\LOGIN.Designer.vb">
       <DependentUpon>LOGIN.vb</DependentUpon>
     </Compile>
@@ -253,6 +256,8 @@
     <Compile Include="Features\Manager\MANAGERACCOUNT.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Features\Manager\Modules\ManagerControllers.vb" />
+    <Compile Include="Features\Manager\Modules\ManagerModels.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

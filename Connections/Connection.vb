@@ -2,6 +2,8 @@
 Imports CLPMS.ADMINREGISISTRATION
 Imports CLPMS.PROPERTYMANAGEMENT
 Imports MongoDB.Driver
+Imports CLPMS.LESSEE
+Imports MongoDB.Driver.WriteConcern
 
 Module Connection
     Public ReadOnly ConnectionString As String = "mongodb+srv://johnjericpalima11:johnjericpalima11@clpmsdb.wo66qzz.mongodb.net/CLPMSdb?retryWrites=true&w=majority"
@@ -29,13 +31,33 @@ Module Connection
     End Function
 
     'Admin  
-    Public Function GetAdminsCollection() As IMongoCollection(Of Admin)
-        Return GetCollectionName(Of Admin)()
+    Public Function GetAdminsCollection() As IMongoCollection(Of Admins)
+        Return GetCollectionName(Of Admins)()
     End Function
 
     'Property
-    Public Function GetPropertiesCollection() As IMongoCollection(Of PropertyM)
-        Return GetCollectionName(Of PropertyM)()
+    Public Function GetPropertiesCollection() As IMongoCollection(Of properties)
+        Return GetCollectionName(Of properties)()
     End Function
+
+
+    'Lesee
+    Public Function GetLesseeCollection() As IMongoCollection(Of Lessee_Account)
+        Return GetCollectionName(Of Lessee_Account)()
+    End Function
+
+    'Lessor
+    Public Function GetLessorCollection() As IMongoCollection(Of Lessor_Account)
+        Return GetCollectionName(Of Lessor_Account)()
+    End Function
+
+    'Manager
+    Public Function GetMangerCollection() As IMongoCollection(Of Accounts)
+        Return GetCollectionName(Of Accounts)()
+    End Function
+
+
+    'Archive Data
+
 
 End Module

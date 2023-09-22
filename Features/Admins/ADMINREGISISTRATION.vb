@@ -16,15 +16,9 @@ Public Class ADMINREGISISTRATION
     Public Sub New()
         InitializeComponent()
         _database = Connection.GetMongoDatabase()
-        'columnsName = New List(Of String) From {"ID", "Name", "Age", "Email", "Contact", "Address", "Username", "Password"}
-        ' If Connection1.IsConnected() Then
-        'MessageBox.Show("Connected to MongoDB successfully!", "Connection Status", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        ' Else
-        'MessageBox.Show("Failed to connect to MongoDB.", "Connection Status", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        'End If
     End Sub
 
-    Public Class Admin
+    Public Class Admins
         <BsonId>
         <BsonRepresentation(BsonType.ObjectId)>
         Public Property ID As String
@@ -58,7 +52,7 @@ Public Class ADMINREGISISTRATION
             If (validData) Then
                 Dim age As Integer
                 Integer.TryParse(txtage.Text, age)
-                Dim admin As New Admin With {
+                Dim admin As New Admins With {
                     .Name = txtname.Text,
                     .Age = age,
                     .Email = txtemail.Text,
@@ -99,10 +93,10 @@ Public Class ADMINREGISISTRATION
         dataTable.Columns.Add("Password", GetType(String))
 
         Dim adminsCollection = Connection.GetAdminsCollection()
-        Dim adminsCursor = adminsCollection.Find(FilterDefinition(Of Admin).Empty)
+        Dim adminsCursor = adminsCollection.Find(FilterDefinition(Of Admins).Empty)
         Dim admins = adminsCursor.ToList()
 
-        For Each admin As Admin In admins
+        For Each admin As Admins In admins
             dataTable.Rows.Add(admin.ID, admin.Name, admin.Age, admin.Email, admin.Contact, admin.Address, admin.Username, admin.Password)
         Next
 
@@ -125,7 +119,7 @@ Public Class ADMINREGISISTRATION
             Dim adminsCollection = Connection.GetAdminsCollection()
 
             ' Use the adminID as a string directly in the lambda expression
-            Dim filter = Builders(Of Admin).Filter.Eq(Function(a) a.ID, adminID)
+            Dim filter = Builders(Of Admins).Filter.Eq(Function(a) a.ID, adminID)
             Dim existingAdmin = adminsCollection.Find(filter).FirstOrDefault()
 
             If existingAdmin IsNot Nothing Then
@@ -178,7 +172,7 @@ Public Class ADMINREGISISTRATION
                         Dim adminsCollection = Connection.GetAdminsCollection()
 
                         ' Use the adminID as a string directly in the lambda expression
-                        Dim filter = Builders(Of ADMINREGISISTRATION.Admin).Filter.Eq(Function(a) a.ID, adminID)
+                        Dim filter = Builders(Of ADMINREGISISTRATION.Admins).Filter.Eq(Function(a) a.ID, adminID)
                         Dim deleteResult = adminsCollection.DeleteOne(filter)
 
                         If deleteResult.DeletedCount > 0 Then

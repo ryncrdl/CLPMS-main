@@ -22,35 +22,37 @@ Partial Class PROPERTYMANAGEMENT
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.MetroTextBox1 = New MetroFramework.Controls.MetroTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.MetroComboBox1 = New MetroFramework.Controls.MetroComboBox()
-        Me.txtdescription = New MetroFramework.Controls.MetroTextBox()
+        Me.txtfloors = New MetroFramework.Controls.MetroTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Amenities = New MetroFramework.Controls.MetroTextBox()
-        Me.square_meter = New MetroFramework.Controls.MetroTextBox()
+        Me.txtlessor = New MetroFramework.Controls.MetroTextBox()
+        Me.txtproperty = New MetroFramework.Controls.MetroTextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtpermit = New MetroFramework.Controls.MetroTextBox()
+        Me.txtfloorocc = New MetroFramework.Controls.MetroTextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtdate = New MetroFramework.Controls.MetroDateTime()
         Me.TableProperty = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PropertyName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Lessor = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Floors = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FloorOccu = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Image = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Shapes1 = New Guna.UI2.WinForms.Guna2Shapes()
         Me.BtnRemove = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.BtnUpdate = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SquareMeter = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Camenities = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Description = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Permit = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.clDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.txtimage = New MetroFramework.Controls.MetroTextBox()
+        Me.txtid = New MetroFramework.Controls.MetroTextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.TableProperty, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -109,217 +111,207 @@ Partial Class PROPERTYMANAGEMENT
         Me.MetroComboBox1.TabIndex = 120
         Me.MetroComboBox1.UseSelectable = True
         '
-        'txtdescription
+        'txtfloors
         '
         '
         '
         '
-        Me.txtdescription.CustomButton.Image = Nothing
-        Me.txtdescription.CustomButton.Location = New System.Drawing.Point(307, 2)
-        Me.txtdescription.CustomButton.Name = ""
-        Me.txtdescription.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.txtdescription.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtdescription.CustomButton.TabIndex = 1
-        Me.txtdescription.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtdescription.CustomButton.UseSelectable = True
-        Me.txtdescription.CustomButton.Visible = False
-        Me.txtdescription.Lines = New String(-1) {}
-        Me.txtdescription.Location = New System.Drawing.Point(55, 281)
-        Me.txtdescription.MaxLength = 32767
-        Me.txtdescription.Name = "txtdescription"
-        Me.txtdescription.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtdescription.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtdescription.SelectedText = ""
-        Me.txtdescription.SelectionLength = 0
-        Me.txtdescription.SelectionStart = 0
-        Me.txtdescription.ShortcutsEnabled = True
-        Me.txtdescription.Size = New System.Drawing.Size(335, 30)
-        Me.txtdescription.TabIndex = 132
-        Me.txtdescription.UseSelectable = True
-        Me.txtdescription.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtdescription.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        Me.txtfloors.CustomButton.Image = Nothing
+        Me.txtfloors.CustomButton.Location = New System.Drawing.Point(307, 2)
+        Me.txtfloors.CustomButton.Name = ""
+        Me.txtfloors.CustomButton.Size = New System.Drawing.Size(25, 25)
+        Me.txtfloors.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtfloors.CustomButton.TabIndex = 1
+        Me.txtfloors.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtfloors.CustomButton.UseSelectable = True
+        Me.txtfloors.CustomButton.Visible = False
+        Me.txtfloors.Lines = New String(-1) {}
+        Me.txtfloors.Location = New System.Drawing.Point(55, 344)
+        Me.txtfloors.MaxLength = 32767
+        Me.txtfloors.Name = "txtfloors"
+        Me.txtfloors.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtfloors.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtfloors.SelectedText = ""
+        Me.txtfloors.SelectionLength = 0
+        Me.txtfloors.SelectionStart = 0
+        Me.txtfloors.ShortcutsEnabled = True
+        Me.txtfloors.Size = New System.Drawing.Size(335, 30)
+        Me.txtfloors.TabIndex = 132
+        Me.txtfloors.UseSelectable = True
+        Me.txtfloors.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtfloors.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(51, 255)
+        Me.Label4.Location = New System.Drawing.Point(51, 318)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 16)
+        Me.Label4.Size = New System.Drawing.Size(45, 16)
         Me.Label4.TabIndex = 131
-        Me.Label4.Text = "Description"
+        Me.Label4.Text = "Floors"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(51, 195)
+        Me.Label5.Location = New System.Drawing.Point(51, 258)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(66, 16)
+        Me.Label5.Size = New System.Drawing.Size(48, 16)
         Me.Label5.TabIndex = 129
-        Me.Label5.Text = "Amenities"
+        Me.Label5.Text = "Lessor"
         '
-        'Amenities
-        '
-        '
-        '
-        '
-        Me.Amenities.CustomButton.Image = Nothing
-        Me.Amenities.CustomButton.Location = New System.Drawing.Point(307, 2)
-        Me.Amenities.CustomButton.Name = ""
-        Me.Amenities.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.Amenities.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.Amenities.CustomButton.TabIndex = 1
-        Me.Amenities.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.Amenities.CustomButton.UseSelectable = True
-        Me.Amenities.CustomButton.Visible = False
-        Me.Amenities.Lines = New String(-1) {}
-        Me.Amenities.Location = New System.Drawing.Point(55, 221)
-        Me.Amenities.MaxLength = 32767
-        Me.Amenities.Name = "Amenities"
-        Me.Amenities.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Amenities.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.Amenities.SelectedText = ""
-        Me.Amenities.SelectionLength = 0
-        Me.Amenities.SelectionStart = 0
-        Me.Amenities.ShortcutsEnabled = True
-        Me.Amenities.Size = New System.Drawing.Size(335, 30)
-        Me.Amenities.TabIndex = 130
-        Me.Amenities.UseSelectable = True
-        Me.Amenities.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.Amenities.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
-        '
-        'square_meter
+        'txtlessor
         '
         '
         '
         '
-        Me.square_meter.CustomButton.Image = Nothing
-        Me.square_meter.CustomButton.Location = New System.Drawing.Point(307, 2)
-        Me.square_meter.CustomButton.Name = ""
-        Me.square_meter.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.square_meter.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.square_meter.CustomButton.TabIndex = 1
-        Me.square_meter.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.square_meter.CustomButton.UseSelectable = True
-        Me.square_meter.CustomButton.Visible = False
-        Me.square_meter.Lines = New String(-1) {}
-        Me.square_meter.Location = New System.Drawing.Point(55, 159)
-        Me.square_meter.MaxLength = 32767
-        Me.square_meter.Name = "square_meter"
-        Me.square_meter.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.square_meter.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.square_meter.SelectedText = ""
-        Me.square_meter.SelectionLength = 0
-        Me.square_meter.SelectionStart = 0
-        Me.square_meter.ShortcutsEnabled = True
-        Me.square_meter.Size = New System.Drawing.Size(335, 30)
-        Me.square_meter.TabIndex = 128
-        Me.square_meter.UseSelectable = True
-        Me.square_meter.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.square_meter.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        Me.txtlessor.CustomButton.Image = Nothing
+        Me.txtlessor.CustomButton.Location = New System.Drawing.Point(307, 2)
+        Me.txtlessor.CustomButton.Name = ""
+        Me.txtlessor.CustomButton.Size = New System.Drawing.Size(25, 25)
+        Me.txtlessor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtlessor.CustomButton.TabIndex = 1
+        Me.txtlessor.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtlessor.CustomButton.UseSelectable = True
+        Me.txtlessor.CustomButton.Visible = False
+        Me.txtlessor.Lines = New String(-1) {}
+        Me.txtlessor.Location = New System.Drawing.Point(55, 284)
+        Me.txtlessor.MaxLength = 32767
+        Me.txtlessor.Name = "txtlessor"
+        Me.txtlessor.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtlessor.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtlessor.SelectedText = ""
+        Me.txtlessor.SelectionLength = 0
+        Me.txtlessor.SelectionStart = 0
+        Me.txtlessor.ShortcutsEnabled = True
+        Me.txtlessor.Size = New System.Drawing.Size(335, 30)
+        Me.txtlessor.TabIndex = 130
+        Me.txtlessor.UseSelectable = True
+        Me.txtlessor.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtlessor.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'txtproperty
+        '
+        '
+        '
+        '
+        Me.txtproperty.CustomButton.Image = Nothing
+        Me.txtproperty.CustomButton.Location = New System.Drawing.Point(307, 2)
+        Me.txtproperty.CustomButton.Name = ""
+        Me.txtproperty.CustomButton.Size = New System.Drawing.Size(25, 25)
+        Me.txtproperty.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtproperty.CustomButton.TabIndex = 1
+        Me.txtproperty.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtproperty.CustomButton.UseSelectable = True
+        Me.txtproperty.CustomButton.Visible = False
+        Me.txtproperty.Lines = New String(-1) {}
+        Me.txtproperty.Location = New System.Drawing.Point(55, 222)
+        Me.txtproperty.MaxLength = 32767
+        Me.txtproperty.Name = "txtproperty"
+        Me.txtproperty.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtproperty.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtproperty.SelectedText = ""
+        Me.txtproperty.SelectionLength = 0
+        Me.txtproperty.SelectionStart = 0
+        Me.txtproperty.ShortcutsEnabled = True
+        Me.txtproperty.Size = New System.Drawing.Size(335, 30)
+        Me.txtproperty.TabIndex = 128
+        Me.txtproperty.UseSelectable = True
+        Me.txtproperty.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtproperty.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(51, 133)
+        Me.Label8.Location = New System.Drawing.Point(51, 196)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(88, 16)
+        Me.Label8.Size = New System.Drawing.Size(98, 16)
         Me.Label8.TabIndex = 127
-        Me.Label8.Text = "Square meter"
+        Me.Label8.Text = "Property Name"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(51, 376)
+        Me.Label6.Location = New System.Drawing.Point(51, 439)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(108, 16)
+        Me.Label6.Size = New System.Drawing.Size(110, 16)
         Me.Label6.TabIndex = 135
-        Me.Label6.Text = "Date of Establish"
+        Me.Label6.Text = "Image File Name"
         '
-        'txtpermit
-        '
-        '
+        'txtfloorocc
         '
         '
-        Me.txtpermit.CustomButton.Image = Nothing
-        Me.txtpermit.CustomButton.Location = New System.Drawing.Point(307, 2)
-        Me.txtpermit.CustomButton.Name = ""
-        Me.txtpermit.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.txtpermit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtpermit.CustomButton.TabIndex = 1
-        Me.txtpermit.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtpermit.CustomButton.UseSelectable = True
-        Me.txtpermit.CustomButton.Visible = False
-        Me.txtpermit.Lines = New String(-1) {}
-        Me.txtpermit.Location = New System.Drawing.Point(55, 340)
-        Me.txtpermit.MaxLength = 32767
-        Me.txtpermit.Name = "txtpermit"
-        Me.txtpermit.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtpermit.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtpermit.SelectedText = ""
-        Me.txtpermit.SelectionLength = 0
-        Me.txtpermit.SelectionStart = 0
-        Me.txtpermit.ShortcutsEnabled = True
-        Me.txtpermit.Size = New System.Drawing.Size(335, 30)
-        Me.txtpermit.TabIndex = 134
-        Me.txtpermit.UseSelectable = True
-        Me.txtpermit.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtpermit.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        '
+        Me.txtfloorocc.CustomButton.Image = Nothing
+        Me.txtfloorocc.CustomButton.Location = New System.Drawing.Point(307, 2)
+        Me.txtfloorocc.CustomButton.Name = ""
+        Me.txtfloorocc.CustomButton.Size = New System.Drawing.Size(25, 25)
+        Me.txtfloorocc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtfloorocc.CustomButton.TabIndex = 1
+        Me.txtfloorocc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtfloorocc.CustomButton.UseSelectable = True
+        Me.txtfloorocc.CustomButton.Visible = False
+        Me.txtfloorocc.Lines = New String(-1) {}
+        Me.txtfloorocc.Location = New System.Drawing.Point(55, 403)
+        Me.txtfloorocc.MaxLength = 32767
+        Me.txtfloorocc.Name = "txtfloorocc"
+        Me.txtfloorocc.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtfloorocc.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtfloorocc.SelectedText = ""
+        Me.txtfloorocc.SelectionLength = 0
+        Me.txtfloorocc.SelectionStart = 0
+        Me.txtfloorocc.ShortcutsEnabled = True
+        Me.txtfloorocc.Size = New System.Drawing.Size(335, 30)
+        Me.txtfloorocc.TabIndex = 134
+        Me.txtfloorocc.UseSelectable = True
+        Me.txtfloorocc.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtfloorocc.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(51, 314)
+        Me.Label7.Location = New System.Drawing.Point(51, 377)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(45, 16)
+        Me.Label7.Size = New System.Drawing.Size(109, 16)
         Me.Label7.TabIndex = 133
-        Me.Label7.Text = "Permit"
-        '
-        'txtdate
-        '
-        Me.txtdate.CustomFormat = "dd/MM/yyyy"
-        Me.txtdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.txtdate.Location = New System.Drawing.Point(52, 395)
-        Me.txtdate.MinimumSize = New System.Drawing.Size(0, 29)
-        Me.txtdate.Name = "txtdate"
-        Me.txtdate.Size = New System.Drawing.Size(338, 29)
-        Me.txtdate.TabIndex = 146
+        Me.Label7.Text = "Floor Occupation"
         '
         'TableProperty
         '
         Me.TableProperty.AllowUserToAddRows = False
         Me.TableProperty.AllowUserToDeleteRows = False
         Me.TableProperty.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.TableProperty.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.TableProperty.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.TableProperty.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.TableProperty.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.TableProperty.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.TableProperty.ColumnHeadersHeight = 30
-        Me.TableProperty.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.SquareMeter, Me.Camenities, Me.Description, Me.Permit, Me.clDate})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TableProperty.DefaultCellStyle = DataGridViewCellStyle3
+        Me.TableProperty.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.PropertyName, Me.Lessor, Me.Floors, Me.FloorOccu, Me.Image})
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TableProperty.DefaultCellStyle = DataGridViewCellStyle6
         Me.TableProperty.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.TableProperty.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TableProperty.Location = New System.Drawing.Point(441, 58)
@@ -350,6 +342,49 @@ Partial Class PROPERTYMANAGEMENT
         Me.TableProperty.ThemeStyle.RowsStyle.Height = 22
         Me.TableProperty.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TableProperty.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'ID
+        '
+        Me.ID.HeaderText = "ID"
+        Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
+        Me.ID.Visible = False
+        Me.ID.Width = 41
+        '
+        'PropertyName
+        '
+        Me.PropertyName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.PropertyName.HeaderText = "Property Name"
+        Me.PropertyName.Name = "PropertyName"
+        Me.PropertyName.ReadOnly = True
+        '
+        'Lessor
+        '
+        Me.Lessor.HeaderText = "Lessor"
+        Me.Lessor.Name = "Lessor"
+        Me.Lessor.ReadOnly = True
+        Me.Lessor.Width = 61
+        '
+        'Floors
+        '
+        Me.Floors.HeaderText = "Floors"
+        Me.Floors.Name = "Floors"
+        Me.Floors.ReadOnly = True
+        Me.Floors.Width = 58
+        '
+        'FloorOccu
+        '
+        Me.FloorOccu.HeaderText = "Floor Occupation"
+        Me.FloorOccu.Name = "FloorOccu"
+        Me.FloorOccu.ReadOnly = True
+        Me.FloorOccu.Width = 102
+        '
+        'Image
+        '
+        Me.Image.HeaderText = "Image"
+        Me.Image.Name = "Image"
+        Me.Image.ReadOnly = True
+        Me.Image.Width = 59
         '
         'Label1
         '
@@ -450,48 +485,77 @@ Partial Class PROPERTYMANAGEMENT
         Me.Guna2Button1.Text = "Add List"
         Me.Guna2Button1.UseTransparentBackground = True
         '
-        'ID
+        'txtimage
         '
-        Me.ID.HeaderText = "ID"
-        Me.ID.Name = "ID"
-        Me.ID.ReadOnly = True
-        Me.ID.Visible = False
-        Me.ID.Width = 41
         '
-        'SquareMeter
         '
-        Me.SquareMeter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.SquareMeter.HeaderText = "Square Meter"
-        Me.SquareMeter.Name = "SquareMeter"
-        Me.SquareMeter.ReadOnly = True
         '
-        'Camenities
+        Me.txtimage.CustomButton.Image = Nothing
+        Me.txtimage.CustomButton.Location = New System.Drawing.Point(307, 2)
+        Me.txtimage.CustomButton.Name = ""
+        Me.txtimage.CustomButton.Size = New System.Drawing.Size(25, 25)
+        Me.txtimage.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtimage.CustomButton.TabIndex = 1
+        Me.txtimage.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtimage.CustomButton.UseSelectable = True
+        Me.txtimage.CustomButton.Visible = False
+        Me.txtimage.Lines = New String(-1) {}
+        Me.txtimage.Location = New System.Drawing.Point(55, 458)
+        Me.txtimage.MaxLength = 32767
+        Me.txtimage.Name = "txtimage"
+        Me.txtimage.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtimage.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtimage.SelectedText = ""
+        Me.txtimage.SelectionLength = 0
+        Me.txtimage.SelectionStart = 0
+        Me.txtimage.ShortcutsEnabled = True
+        Me.txtimage.Size = New System.Drawing.Size(335, 30)
+        Me.txtimage.TabIndex = 256
+        Me.txtimage.UseSelectable = True
+        Me.txtimage.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtimage.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
-        Me.Camenities.HeaderText = "Amenities"
-        Me.Camenities.Name = "Camenities"
-        Me.Camenities.ReadOnly = True
-        Me.Camenities.Width = 75
+        'txtid
         '
-        'Description
         '
-        Me.Description.HeaderText = "Description"
-        Me.Description.Name = "Description"
-        Me.Description.ReadOnly = True
-        Me.Description.Width = 83
         '
-        'Permit
         '
-        Me.Permit.HeaderText = "Permit"
-        Me.Permit.Name = "Permit"
-        Me.Permit.ReadOnly = True
-        Me.Permit.Width = 59
+        Me.txtid.CustomButton.Image = Nothing
+        Me.txtid.CustomButton.Location = New System.Drawing.Point(307, 2)
+        Me.txtid.CustomButton.Name = ""
+        Me.txtid.CustomButton.Size = New System.Drawing.Size(25, 25)
+        Me.txtid.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtid.CustomButton.TabIndex = 1
+        Me.txtid.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtid.CustomButton.UseSelectable = True
+        Me.txtid.CustomButton.Visible = False
+        Me.txtid.Enabled = False
+        Me.txtid.Lines = New String(-1) {}
+        Me.txtid.Location = New System.Drawing.Point(56, 161)
+        Me.txtid.MaxLength = 32767
+        Me.txtid.Name = "txtid"
+        Me.txtid.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtid.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtid.SelectedText = ""
+        Me.txtid.SelectionLength = 0
+        Me.txtid.SelectionStart = 0
+        Me.txtid.ShortcutsEnabled = True
+        Me.txtid.Size = New System.Drawing.Size(335, 30)
+        Me.txtid.TabIndex = 258
+        Me.txtid.UseSelectable = True
+        Me.txtid.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtid.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
-        'clDate
+        'Label2
         '
-        Me.clDate.HeaderText = "Date"
-        Me.clDate.Name = "clDate"
-        Me.clDate.ReadOnly = True
-        Me.clDate.Width = 53
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(52, 135)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(20, 16)
+        Me.Label2.TabIndex = 257
+        Me.Label2.Text = "ID"
         '
         'PROPERTYMANAGEMENT
         '
@@ -499,6 +563,9 @@ Partial Class PROPERTYMANAGEMENT
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(941, 665)
+        Me.Controls.Add(Me.txtid)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtimage)
         Me.Controls.Add(Me.BtnRemove)
         Me.Controls.Add(Me.Guna2Button3)
         Me.Controls.Add(Me.BtnUpdate)
@@ -506,15 +573,14 @@ Partial Class PROPERTYMANAGEMENT
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Guna2Shapes1)
         Me.Controls.Add(Me.TableProperty)
-        Me.Controls.Add(Me.txtdate)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.txtpermit)
+        Me.Controls.Add(Me.txtfloorocc)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.txtdescription)
+        Me.Controls.Add(Me.txtfloors)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Amenities)
-        Me.Controls.Add(Me.square_meter)
+        Me.Controls.Add(Me.txtlessor)
+        Me.Controls.Add(Me.txtproperty)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.MetroComboBox1)
         Me.Controls.Add(Me.MetroTextBox1)
@@ -531,16 +597,15 @@ Partial Class PROPERTYMANAGEMENT
     Friend WithEvents MetroTextBox1 As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents MetroComboBox1 As MetroFramework.Controls.MetroComboBox
-    Friend WithEvents txtdescription As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtfloors As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Amenities As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents square_meter As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtlessor As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtproperty As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents txtpermit As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtfloorocc As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents txtdate As MetroFramework.Controls.MetroDateTime
     Friend WithEvents TableProperty As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Label1 As Label
     Friend WithEvents Guna2Shapes1 As Guna.UI2.WinForms.Guna2Shapes
@@ -548,10 +613,13 @@ Partial Class PROPERTYMANAGEMENT
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BtnUpdate As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents txtimage As MetroFramework.Controls.MetroTextBox
     Friend WithEvents ID As DataGridViewTextBoxColumn
-    Friend WithEvents SquareMeter As DataGridViewTextBoxColumn
-    Friend WithEvents Camenities As DataGridViewTextBoxColumn
-    Friend WithEvents Description As DataGridViewTextBoxColumn
-    Friend WithEvents Permit As DataGridViewTextBoxColumn
-    Friend WithEvents clDate As DataGridViewTextBoxColumn
+    Friend WithEvents PropertyName As DataGridViewTextBoxColumn
+    Friend WithEvents Lessor As DataGridViewTextBoxColumn
+    Friend WithEvents Floors As DataGridViewTextBoxColumn
+    Friend WithEvents FloorOccu As DataGridViewTextBoxColumn
+    Friend WithEvents Image As DataGridViewTextBoxColumn
+    Friend WithEvents txtid As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents Label2 As Label
 End Class

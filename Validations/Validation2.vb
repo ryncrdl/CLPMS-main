@@ -5,6 +5,7 @@ Module Validation2
         ' Check if any of the fields are empty or null
         validData = True
 
+
         If String.IsNullOrEmpty(data(1).Text.Trim()) Then
             MessageBox.Show("Please enter your name.")
             validData = False
@@ -52,28 +53,77 @@ Module Validation2
         ' Check if any of the fields are empty or null
         validData = True
 
-        Dim sq As Integer
-        If Not Integer.TryParse(data(0).Text, sq) Or sq <= 0 Then
-            MessageBox.Show("Please enter a valid square meter.")
+
+        If String.IsNullOrEmpty(data(0).Text.Trim()) Then
+            MessageBox.Show("Select row to update.")
             validData = False
             Return False
         End If
 
         If String.IsNullOrEmpty(data(1).Text.Trim()) Then
-            MessageBox.Show("Please enter amenities.")
+            MessageBox.Show("Please enter a valid property name.")
             validData = False
             Return False
         End If
 
         If String.IsNullOrEmpty(data(2).Text.Trim()) Then
-            MessageBox.Show("Please enter description.")
+            MessageBox.Show("Please enter lessor.")
             validData = False
             Return False
         End If
 
         If String.IsNullOrEmpty(data(3).Text.Trim()) Then
-            MessageBox.Show("Please enter Permit.")
+            MessageBox.Show("Please enter floors.")
             validData = False
+            Return False
+        End If
+
+        If String.IsNullOrEmpty(data(4).Text.Trim()) Then
+            MessageBox.Show("Please enter floors Occu.")
+            validData = False
+            Return False
+        End If
+
+
+        If String.IsNullOrEmpty(data(5).Text.Trim()) Then
+            MessageBox.Show("Please enter image file name.")
+            validData = False
+            Return False
+        End If
+
+    End Function
+
+    Public Function ValidateFieldsNotEmptyLessee(data As List(Of MetroTextBox), gender As List(Of MetroComboBox), ByRef validData As Boolean)
+        ' Check if any of the fields are empty or null
+        validData = True
+
+        If String.IsNullOrEmpty(data(0).Text.Trim()) Then
+            MessageBox.Show("Select row to update.")
+            validData = False
+            Return False
+        End If
+
+
+        If String.IsNullOrEmpty(data(1).Text.Trim()) Then
+            MessageBox.Show("Please enter your name.")
+            validData = False
+            Return False
+        End If
+
+        If String.IsNullOrEmpty(gender(0).Text.Trim()) Then
+            MessageBox.Show("Please enter a valid gender.")
+            validData = False
+            Return False
+        End If
+
+        If String.IsNullOrEmpty(data(2).Text.Trim()) Then
+            MessageBox.Show("Please enter your email.")
+            validData = False
+            Return False
+        End If
+
+        If (String.IsNullOrEmpty(data(3).Text.Trim())) Then
+            MessageBox.Show("Please enter your password.")
             Return False
         End If
 

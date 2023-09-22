@@ -25,18 +25,18 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Guna2GradientPanel2 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtpermit = New MetroFramework.Controls.MetroTextBox()
+        Me.txtfloorsOcc = New MetroFramework.Controls.MetroTextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtdescription = New MetroFramework.Controls.MetroTextBox()
+        Me.txtfloors = New MetroFramework.Controls.MetroTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtamenities = New MetroFramework.Controls.MetroTextBox()
-        Me.txtsq = New MetroFramework.Controls.MetroTextBox()
+        Me.txtlessor = New MetroFramework.Controls.MetroTextBox()
+        Me.txtproperty = New MetroFramework.Controls.MetroTextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.BtnCancel = New Guna.UI2.WinForms.Guna2Button()
         Me.BtnAdd = New Guna.UI2.WinForms.Guna2Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtdate = New MetroFramework.Controls.MetroDateTime()
+        Me.txtimage = New MetroFramework.Controls.MetroTextBox()
         Me.Guna2GradientPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -69,39 +69,39 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(26, 306)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(108, 16)
+        Me.Label6.Size = New System.Drawing.Size(110, 16)
         Me.Label6.TabIndex = 163
-        Me.Label6.Text = "Date of Establish"
+        Me.Label6.Text = "Image FIle Name"
         '
-        'txtpermit
-        '
-        '
+        'txtfloorsOcc
         '
         '
-        Me.txtpermit.CustomButton.Image = Nothing
-        Me.txtpermit.CustomButton.Location = New System.Drawing.Point(307, 2)
-        Me.txtpermit.CustomButton.Name = ""
-        Me.txtpermit.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.txtpermit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtpermit.CustomButton.TabIndex = 1
-        Me.txtpermit.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtpermit.CustomButton.UseSelectable = True
-        Me.txtpermit.CustomButton.Visible = False
-        Me.txtpermit.Lines = New String(-1) {}
-        Me.txtpermit.Location = New System.Drawing.Point(30, 270)
-        Me.txtpermit.MaxLength = 32767
-        Me.txtpermit.Name = "txtpermit"
-        Me.txtpermit.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtpermit.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtpermit.SelectedText = ""
-        Me.txtpermit.SelectionLength = 0
-        Me.txtpermit.SelectionStart = 0
-        Me.txtpermit.ShortcutsEnabled = True
-        Me.txtpermit.Size = New System.Drawing.Size(335, 30)
-        Me.txtpermit.TabIndex = 162
-        Me.txtpermit.UseSelectable = True
-        Me.txtpermit.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtpermit.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        '
+        Me.txtfloorsOcc.CustomButton.Image = Nothing
+        Me.txtfloorsOcc.CustomButton.Location = New System.Drawing.Point(307, 2)
+        Me.txtfloorsOcc.CustomButton.Name = ""
+        Me.txtfloorsOcc.CustomButton.Size = New System.Drawing.Size(25, 25)
+        Me.txtfloorsOcc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtfloorsOcc.CustomButton.TabIndex = 1
+        Me.txtfloorsOcc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtfloorsOcc.CustomButton.UseSelectable = True
+        Me.txtfloorsOcc.CustomButton.Visible = False
+        Me.txtfloorsOcc.Lines = New String(-1) {}
+        Me.txtfloorsOcc.Location = New System.Drawing.Point(30, 270)
+        Me.txtfloorsOcc.MaxLength = 32767
+        Me.txtfloorsOcc.Name = "txtfloorsOcc"
+        Me.txtfloorsOcc.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtfloorsOcc.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtfloorsOcc.SelectedText = ""
+        Me.txtfloorsOcc.SelectionLength = 0
+        Me.txtfloorsOcc.SelectionStart = 0
+        Me.txtfloorsOcc.ShortcutsEnabled = True
+        Me.txtfloorsOcc.Size = New System.Drawing.Size(335, 30)
+        Me.txtfloorsOcc.TabIndex = 162
+        Me.txtfloorsOcc.UseSelectable = True
+        Me.txtfloorsOcc.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtfloorsOcc.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'Label7
         '
@@ -110,39 +110,39 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(26, 244)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(45, 16)
+        Me.Label7.Size = New System.Drawing.Size(109, 16)
         Me.Label7.TabIndex = 161
-        Me.Label7.Text = "Permit"
+        Me.Label7.Text = "Floor Occupation"
         '
-        'txtdescription
-        '
-        '
+        'txtfloors
         '
         '
-        Me.txtdescription.CustomButton.Image = Nothing
-        Me.txtdescription.CustomButton.Location = New System.Drawing.Point(307, 2)
-        Me.txtdescription.CustomButton.Name = ""
-        Me.txtdescription.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.txtdescription.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtdescription.CustomButton.TabIndex = 1
-        Me.txtdescription.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtdescription.CustomButton.UseSelectable = True
-        Me.txtdescription.CustomButton.Visible = False
-        Me.txtdescription.Lines = New String(-1) {}
-        Me.txtdescription.Location = New System.Drawing.Point(30, 211)
-        Me.txtdescription.MaxLength = 32767
-        Me.txtdescription.Name = "txtdescription"
-        Me.txtdescription.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtdescription.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtdescription.SelectedText = ""
-        Me.txtdescription.SelectionLength = 0
-        Me.txtdescription.SelectionStart = 0
-        Me.txtdescription.ShortcutsEnabled = True
-        Me.txtdescription.Size = New System.Drawing.Size(335, 30)
-        Me.txtdescription.TabIndex = 160
-        Me.txtdescription.UseSelectable = True
-        Me.txtdescription.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtdescription.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        '
+        Me.txtfloors.CustomButton.Image = Nothing
+        Me.txtfloors.CustomButton.Location = New System.Drawing.Point(307, 2)
+        Me.txtfloors.CustomButton.Name = ""
+        Me.txtfloors.CustomButton.Size = New System.Drawing.Size(25, 25)
+        Me.txtfloors.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtfloors.CustomButton.TabIndex = 1
+        Me.txtfloors.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtfloors.CustomButton.UseSelectable = True
+        Me.txtfloors.CustomButton.Visible = False
+        Me.txtfloors.Lines = New String(-1) {}
+        Me.txtfloors.Location = New System.Drawing.Point(30, 211)
+        Me.txtfloors.MaxLength = 32767
+        Me.txtfloors.Name = "txtfloors"
+        Me.txtfloors.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtfloors.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtfloors.SelectedText = ""
+        Me.txtfloors.SelectionLength = 0
+        Me.txtfloors.SelectionStart = 0
+        Me.txtfloors.ShortcutsEnabled = True
+        Me.txtfloors.Size = New System.Drawing.Size(335, 30)
+        Me.txtfloors.TabIndex = 160
+        Me.txtfloors.UseSelectable = True
+        Me.txtfloors.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtfloors.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'Label4
         '
@@ -151,9 +151,9 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(26, 185)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 16)
+        Me.Label4.Size = New System.Drawing.Size(45, 16)
         Me.Label4.TabIndex = 159
-        Me.Label4.Text = "Description"
+        Me.Label4.Text = "Floors"
         '
         'Label5
         '
@@ -162,69 +162,69 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(26, 125)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(66, 16)
+        Me.Label5.Size = New System.Drawing.Size(48, 16)
         Me.Label5.TabIndex = 157
-        Me.Label5.Text = "Amenities"
+        Me.Label5.Text = "Lessor"
         '
-        'txtamenities
-        '
-        '
-        '
-        '
-        Me.txtamenities.CustomButton.Image = Nothing
-        Me.txtamenities.CustomButton.Location = New System.Drawing.Point(307, 2)
-        Me.txtamenities.CustomButton.Name = ""
-        Me.txtamenities.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.txtamenities.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtamenities.CustomButton.TabIndex = 1
-        Me.txtamenities.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtamenities.CustomButton.UseSelectable = True
-        Me.txtamenities.CustomButton.Visible = False
-        Me.txtamenities.Lines = New String(-1) {}
-        Me.txtamenities.Location = New System.Drawing.Point(30, 151)
-        Me.txtamenities.MaxLength = 32767
-        Me.txtamenities.Name = "txtamenities"
-        Me.txtamenities.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtamenities.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtamenities.SelectedText = ""
-        Me.txtamenities.SelectionLength = 0
-        Me.txtamenities.SelectionStart = 0
-        Me.txtamenities.ShortcutsEnabled = True
-        Me.txtamenities.Size = New System.Drawing.Size(335, 30)
-        Me.txtamenities.TabIndex = 158
-        Me.txtamenities.UseSelectable = True
-        Me.txtamenities.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtamenities.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
-        '
-        'txtsq
+        'txtlessor
         '
         '
         '
         '
-        Me.txtsq.CustomButton.Image = Nothing
-        Me.txtsq.CustomButton.Location = New System.Drawing.Point(307, 2)
-        Me.txtsq.CustomButton.Name = ""
-        Me.txtsq.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.txtsq.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtsq.CustomButton.TabIndex = 1
-        Me.txtsq.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtsq.CustomButton.UseSelectable = True
-        Me.txtsq.CustomButton.Visible = False
-        Me.txtsq.Lines = New String(-1) {}
-        Me.txtsq.Location = New System.Drawing.Point(30, 89)
-        Me.txtsq.MaxLength = 32767
-        Me.txtsq.Name = "txtsq"
-        Me.txtsq.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtsq.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtsq.SelectedText = ""
-        Me.txtsq.SelectionLength = 0
-        Me.txtsq.SelectionStart = 0
-        Me.txtsq.ShortcutsEnabled = True
-        Me.txtsq.Size = New System.Drawing.Size(335, 30)
-        Me.txtsq.TabIndex = 156
-        Me.txtsq.UseSelectable = True
-        Me.txtsq.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtsq.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        Me.txtlessor.CustomButton.Image = Nothing
+        Me.txtlessor.CustomButton.Location = New System.Drawing.Point(307, 2)
+        Me.txtlessor.CustomButton.Name = ""
+        Me.txtlessor.CustomButton.Size = New System.Drawing.Size(25, 25)
+        Me.txtlessor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtlessor.CustomButton.TabIndex = 1
+        Me.txtlessor.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtlessor.CustomButton.UseSelectable = True
+        Me.txtlessor.CustomButton.Visible = False
+        Me.txtlessor.Lines = New String(-1) {}
+        Me.txtlessor.Location = New System.Drawing.Point(30, 151)
+        Me.txtlessor.MaxLength = 32767
+        Me.txtlessor.Name = "txtlessor"
+        Me.txtlessor.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtlessor.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtlessor.SelectedText = ""
+        Me.txtlessor.SelectionLength = 0
+        Me.txtlessor.SelectionStart = 0
+        Me.txtlessor.ShortcutsEnabled = True
+        Me.txtlessor.Size = New System.Drawing.Size(335, 30)
+        Me.txtlessor.TabIndex = 158
+        Me.txtlessor.UseSelectable = True
+        Me.txtlessor.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtlessor.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'txtproperty
+        '
+        '
+        '
+        '
+        Me.txtproperty.CustomButton.Image = Nothing
+        Me.txtproperty.CustomButton.Location = New System.Drawing.Point(307, 2)
+        Me.txtproperty.CustomButton.Name = ""
+        Me.txtproperty.CustomButton.Size = New System.Drawing.Size(25, 25)
+        Me.txtproperty.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtproperty.CustomButton.TabIndex = 1
+        Me.txtproperty.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtproperty.CustomButton.UseSelectable = True
+        Me.txtproperty.CustomButton.Visible = False
+        Me.txtproperty.Lines = New String(-1) {}
+        Me.txtproperty.Location = New System.Drawing.Point(30, 89)
+        Me.txtproperty.MaxLength = 32767
+        Me.txtproperty.Name = "txtproperty"
+        Me.txtproperty.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtproperty.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtproperty.SelectedText = ""
+        Me.txtproperty.SelectionLength = 0
+        Me.txtproperty.SelectionStart = 0
+        Me.txtproperty.ShortcutsEnabled = True
+        Me.txtproperty.Size = New System.Drawing.Size(335, 30)
+        Me.txtproperty.TabIndex = 156
+        Me.txtproperty.UseSelectable = True
+        Me.txtproperty.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtproperty.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'Label8
         '
@@ -233,9 +233,9 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(26, 63)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(88, 16)
+        Me.Label8.Size = New System.Drawing.Size(98, 16)
         Me.Label8.TabIndex = 155
-        Me.Label8.Text = "Square meter"
+        Me.Label8.Text = "Property Name"
         '
         'BtnCancel
         '
@@ -278,16 +278,35 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.Label3.Size = New System.Drawing.Size(0, 29)
         Me.Label3.TabIndex = 146
         '
-        'txtdate
+        'txtimage
         '
-        Me.txtdate.CustomFormat = "dd/MM/yyy"
-        Me.txtdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.txtdate.Location = New System.Drawing.Point(29, 325)
-        Me.txtdate.MinimumSize = New System.Drawing.Size(0, 29)
-        Me.txtdate.Name = "txtdate"
-        Me.txtdate.Size = New System.Drawing.Size(336, 29)
-        Me.txtdate.TabIndex = 166
-        Me.txtdate.Value = New Date(2023, 8, 18, 0, 0, 0, 0)
+        '
+        '
+        '
+        Me.txtimage.CustomButton.Image = Nothing
+        Me.txtimage.CustomButton.Location = New System.Drawing.Point(307, 2)
+        Me.txtimage.CustomButton.Name = ""
+        Me.txtimage.CustomButton.Size = New System.Drawing.Size(25, 25)
+        Me.txtimage.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtimage.CustomButton.TabIndex = 1
+        Me.txtimage.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtimage.CustomButton.UseSelectable = True
+        Me.txtimage.CustomButton.Visible = False
+        Me.txtimage.Lines = New String(-1) {}
+        Me.txtimage.Location = New System.Drawing.Point(30, 325)
+        Me.txtimage.MaxLength = 32767
+        Me.txtimage.Name = "txtimage"
+        Me.txtimage.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtimage.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtimage.SelectedText = ""
+        Me.txtimage.SelectionLength = 0
+        Me.txtimage.SelectionStart = 0
+        Me.txtimage.ShortcutsEnabled = True
+        Me.txtimage.Size = New System.Drawing.Size(335, 30)
+        Me.txtimage.TabIndex = 166
+        Me.txtimage.UseSelectable = True
+        Me.txtimage.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtimage.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'PROPERTYMANAGEMENTADD
         '
@@ -295,16 +314,16 @@ Partial Class PROPERTYMANAGEMENTADD
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(395, 460)
-        Me.Controls.Add(Me.txtdate)
+        Me.Controls.Add(Me.txtimage)
         Me.Controls.Add(Me.Guna2GradientPanel2)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.txtpermit)
+        Me.Controls.Add(Me.txtfloorsOcc)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.txtdescription)
+        Me.Controls.Add(Me.txtfloors)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.txtamenities)
-        Me.Controls.Add(Me.txtsq)
+        Me.Controls.Add(Me.txtlessor)
+        Me.Controls.Add(Me.txtproperty)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.BtnCancel)
         Me.Controls.Add(Me.BtnAdd)
@@ -324,16 +343,16 @@ Partial Class PROPERTYMANAGEMENTADD
     Friend WithEvents Label9 As Label
     Friend WithEvents Guna2GradientPanel2 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents Label6 As Label
-    Friend WithEvents txtpermit As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtfloorsOcc As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents txtdescription As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtfloors As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents txtamenities As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents txtsq As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtlessor As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtproperty As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents BtnCancel As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BtnAdd As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtdate As MetroFramework.Controls.MetroDateTime
+    Friend WithEvents txtimage As MetroFramework.Controls.MetroTextBox
 End Class

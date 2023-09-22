@@ -1,7 +1,8 @@
 ﻿Imports MetroFramework.Controls
 Public Class PROPERTYMANAGEMENTADD
     Private data As List(Of MetroTextBox)
-    Dim properySet As New PropertyM()
+    Private newMetroId As New MetroTextBox
+    Dim properySet As New properties()
 
     Private Sub BtnAdd_Click(sender As Object, e As EventArgs) Handles BtnAdd.Click
         Dim validData As Boolean = True
@@ -10,24 +11,25 @@ Public Class PROPERTYMANAGEMENTADD
         Try
             If (validData) Then
                 Dim sq As Integer
-                If Not Integer.TryParse(txtsq.Text, sq) Or sq <= 0 Then
+                If Not Integer.TryParse(txtproperty.Text, sq) Or sq <= 0 Then
                     MessageBox.Show("Please enter a valid square meter.", "Invalid Square Meter", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Else
-                    Dim amenities As String = txtamenities.Text
-                    Dim description As String = txtdescription.Text
-                    Dim permit As String = txtpermit.Text
+                    Dim propertyName As String = txtproperty.Text
+                    Dim lessor As String = txtlessor.Text
+                    Dim floors As String = txtfloors.Text
+                    Dim floorsOccu As String = txtfloorsOcc.Text
+                    Dim imageName As String = txtimage.Text
 
-                    Dim establishDate As Date
-                    If Date.TryParse(txtdate.Text, establishDate) Then
-                        Dim properties As New PropertyM With {
-                    .SquareMeter = sq,
-                    .Amenities = amenities,
-                    .Description = description,
-                    .Permit = permit,
-                    .EstablishDate = establishDate
+
+                    Dim properties As New properties With {
+                    .propertyname = propertyName,
+                    .lessor = lessor,
+                    .floors = floors,
+                    .floorOcu = floorsOccu,
+                    .userImage = imageName
                 }
 
-                        Dim propertiesCollection = Connection.GetPropertiesCollection()
+                    Dim propertiesCollection = Connection.GetPropertiesCollection()
                         propertiesCollection.InsertOne(properties)
 
                         MessageBox.Show("Property added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -36,10 +38,7 @@ Public Class PROPERTYMANAGEMENTADD
                         ' Refresh the DataGridView with the latest data               
                         AddPropertyDataRow(properties, PROPERTYMANAGEMENT.TableProperty)
 
-                        'GetPropertiesData(PROPERTYMANAGEMENT.TableProperty)
-                    Else
-                        MessageBox.Show("Please enter a valid date.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    End If
+                    'GetPropertiesData(PROPERTYMANAGEMENT.TableProperty)
                 End If
             End If
         Catch ex As Exception
@@ -54,6 +53,7 @@ Public Class PROPERTYMANAGEMENTADD
     End Sub
 
     Private Sub PROPERTYMANAGEMENTADD_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        data = New List(Of MetroTextBox) From {txtsq, txtamenities, txtdescription, txtpermit}
+        newMetroId.Text = "ID"
+        data = New List(Of MetroTextBox) From {newMetroId, txtproperty, txtlessor, txtfloors, txtfloorsOcc, txtimage}
     End Sub
 End Class

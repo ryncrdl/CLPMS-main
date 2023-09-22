@@ -20,7 +20,7 @@ Public Class LOGIN
             MsgBox("Please enter your username")
             Guna2TextBox1.Focus()
 
-        ElseIf (Guna2Textbox2.Text = "") Then
+        ElseIf (Guna2TextBox2.Text = "") Then
             MsgBox("Please enter your password")
             Guna2TextBox2.Focus()
 
@@ -33,13 +33,13 @@ Public Class LOGIN
                 Dim adminsCollection = Connection.GetAdminsCollection()
 
                 ' Build the filter to find the admin with the specified username and password
-                Dim filter = Builders(Of ADMINREGISISTRATION.Admin).Filter.And(
-                Builders(Of ADMINREGISISTRATION.Admin).Filter.Eq(Function(a) a.Username, username),
-                Builders(Of ADMINREGISISTRATION.Admin).Filter.Eq(Function(a) a.Password, password)
+                Dim filter = Builders(Of ADMINREGISISTRATION.Admins).Filter.And(
+                Builders(Of ADMINREGISISTRATION.Admins).Filter.Eq(Function(a) a.Username, username),
+                Builders(Of ADMINREGISISTRATION.Admins).Filter.Eq(Function(a) a.Password, password)
             )
 
                 ' Check if an admin with the given credentials exists
-                Dim admin As ADMINREGISISTRATION.Admin = adminsCollection.Find(filter).FirstOrDefault()
+                Dim admin As ADMINREGISISTRATION.Admins = adminsCollection.Find(filter).FirstOrDefault()
 
                 If admin IsNot Nothing Then
                     ' Successfully logged in

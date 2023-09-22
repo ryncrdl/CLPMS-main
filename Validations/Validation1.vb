@@ -8,21 +8,7 @@ Module Validation1
     Private MetroTextBox As MetroFramework.Controls.MetroTextBox
     Private DataGridView As Guna.UI2.WinForms.Guna2DataGridView
 
-    Public Function ViewDataToTextBox(table As DataGridView, data As List(Of MetroTextBox), columnsName As List(Of String))
-        ' Check if there is a selected row
-        If table.SelectedRows.Count > 0 Then
-            ' Get the selected row
-            Dim selectedRow As DataGridViewRow = table.SelectedRows(0)
 
-            For i As Integer = 0 To columnsName.Count - 1
-                data(i).Text = selectedRow.Cells(columnsName(i)).Value.ToString()
-            Next
-
-        Else
-            ' Clear the TextBoxes/MetroTextBoxes if no row is selected
-            ClearTextBox(data)
-        End If
-    End Function
 
 
     Public Function ValidateFieldsNotEmpty(data As List(Of MetroTextBox))

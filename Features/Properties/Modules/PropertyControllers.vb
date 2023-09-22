@@ -1,22 +1,22 @@
 ﻿Imports MongoDB.Driver
 
-Module PropertyControllers
-    Public Sub AddPropertyDataRow(propertyM As PropertyM, table As Guna.UI2.WinForms.Guna2DataGridView)
+Module LesseeControllers
+    Public Sub AddPropertyDataRow(properties As properties, table As Guna.UI2.WinForms.Guna2DataGridView)
         Dim newRow As DataGridViewRow = table.Rows(table.Rows.Add())
-        newRow.Cells("ID").Value = propertyM.ID
-        newRow.Cells("SquareMeter").Value = propertyM.SquareMeter
-        newRow.Cells("Camenities").Value = propertyM.Amenities
-        newRow.Cells("Description").Value = propertyM.Description
-        newRow.Cells("Permit").Value = propertyM.Permit
-        newRow.Cells("clDate").Value = propertyM.EstablishDate
+        newRow.Cells("ID").Value = properties.ID
+        newRow.Cells("PropertyName").Value = properties.propertyname
+        newRow.Cells("Lessor").Value = properties.lessor
+        newRow.Cells("Floors").Value = properties.floors
+        newRow.Cells("FloorOccu").Value = properties.floorOcu
+        newRow.Cells("Image").Value = properties.userImage
     End Sub
 
-    Public Function GetPropertiesData(table As Guna.UI2.WinForms.Guna2DataGridView) As List(Of PropertyM)
+    Public Function GetPropertiesData(table As Guna.UI2.WinForms.Guna2DataGridView) As List(Of properties)
         Dim propertiesCollection = GetPropertiesCollection()
-        Dim propertiesCursor = propertiesCollection.Find(FilterDefinition(Of PropertyM).Empty)
+        Dim propertiesCursor = propertiesCollection.Find(FilterDefinition(Of properties).Empty)
         Dim properties = propertiesCursor.ToList()
 
-        For Each propertyM As PropertyM In properties
+        For Each propertyM As properties In properties
             AddPropertyDataRow(propertyM, table)
         Next
 

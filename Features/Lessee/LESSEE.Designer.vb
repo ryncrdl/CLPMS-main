@@ -22,28 +22,18 @@ Partial Class LESSEE
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txtemail = New MetroFramework.Controls.MetroTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtage = New MetroFramework.Controls.MetroTextBox()
         Me.txtname = New MetroFramework.Controls.MetroTextBox()
-        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.MetroTextBox1 = New MetroFramework.Controls.MetroTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtcontact = New MetroFramework.Controls.MetroTextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtaddress = New MetroFramework.Controls.MetroTextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtbusiness = New MetroFramework.Controls.MetroTextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.txtpassword = New MetroFramework.Controls.MetroTextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.txtusername = New MetroFramework.Controls.MetroTextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.txtid = New MetroFramework.Controls.MetroTextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -52,7 +42,14 @@ Partial Class LESSEE
         Me.BtnDlt = New Guna.UI2.WinForms.Guna2Button()
         Me.BtnUpdt = New Guna.UI2.WinForms.Guna2Button()
         Me.BtnClear = New Guna.UI2.WinForms.Guna2Button()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.txtgender = New MetroFramework.Controls.MetroComboBox()
+        Me.TableLessee = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FullName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CGender = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Password = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.TableLessee, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtemail
@@ -70,7 +67,7 @@ Partial Class LESSEE
         Me.txtemail.CustomButton.UseSelectable = True
         Me.txtemail.CustomButton.Visible = False
         Me.txtemail.Lines = New String(-1) {}
-        Me.txtemail.Location = New System.Drawing.Point(133, 223)
+        Me.txtemail.Location = New System.Drawing.Point(133, 222)
         Me.txtemail.MaxLength = 32767
         Me.txtemail.Name = "txtemail"
         Me.txtemail.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -90,7 +87,7 @@ Partial Class LESSEE
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(47, 223)
+        Me.Label4.Location = New System.Drawing.Point(47, 229)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(41, 16)
         Me.Label4.TabIndex = 131
@@ -101,41 +98,11 @@ Partial Class LESSEE
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(45, 187)
+        Me.Label5.Location = New System.Drawing.Point(45, 193)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(32, 16)
+        Me.Label5.Size = New System.Drawing.Size(52, 16)
         Me.Label5.TabIndex = 129
-        Me.Label5.Text = "Age"
-        '
-        'txtage
-        '
-        '
-        '
-        '
-        Me.txtage.CustomButton.Image = Nothing
-        Me.txtage.CustomButton.Location = New System.Drawing.Point(252, 2)
-        Me.txtage.CustomButton.Name = ""
-        Me.txtage.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.txtage.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtage.CustomButton.TabIndex = 1
-        Me.txtage.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtage.CustomButton.UseSelectable = True
-        Me.txtage.CustomButton.Visible = False
-        Me.txtage.Lines = New String(-1) {}
-        Me.txtage.Location = New System.Drawing.Point(133, 187)
-        Me.txtage.MaxLength = 32767
-        Me.txtage.Name = "txtage"
-        Me.txtage.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtage.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtage.SelectedText = ""
-        Me.txtage.SelectionLength = 0
-        Me.txtage.SelectionStart = 0
-        Me.txtage.ShortcutsEnabled = True
-        Me.txtage.Size = New System.Drawing.Size(280, 30)
-        Me.txtage.TabIndex = 130
-        Me.txtage.UseSelectable = True
-        Me.txtage.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtage.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        Me.Label5.Text = "Gender"
         '
         'txtname
         '
@@ -166,61 +133,6 @@ Partial Class LESSEE
         Me.txtname.UseSelectable = True
         Me.txtname.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtname.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
-        '
-        'Guna2DataGridView1
-        '
-        Me.Guna2DataGridView1.AllowUserToAddRows = False
-        Me.Guna2DataGridView1.AllowUserToDeleteRows = False
-        Me.Guna2DataGridView1.AllowUserToResizeRows = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
-        Me.Guna2DataGridView1.ColumnHeadersHeight = 30
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle6
-        Me.Guna2DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.Location = New System.Drawing.Point(439, 58)
-        Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
-        Me.Guna2DataGridView1.RowHeadersVisible = False
-        Me.Guna2DataGridView1.ShowEditingIcon = False
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(451, 412)
-        Me.Guna2DataGridView1.TabIndex = 127
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 30
-        Me.Guna2DataGridView1.ThemeStyle.ReadOnly = False
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
         'MetroTextBox1
         '
@@ -275,129 +187,6 @@ Partial Class LESSEE
         Me.Label8.TabIndex = 124
         Me.Label8.Text = "Name"
         '
-        'txtcontact
-        '
-        '
-        '
-        '
-        Me.txtcontact.CustomButton.Image = Nothing
-        Me.txtcontact.CustomButton.Location = New System.Drawing.Point(252, 2)
-        Me.txtcontact.CustomButton.Name = ""
-        Me.txtcontact.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.txtcontact.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtcontact.CustomButton.TabIndex = 1
-        Me.txtcontact.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtcontact.CustomButton.UseSelectable = True
-        Me.txtcontact.CustomButton.Visible = False
-        Me.txtcontact.Lines = New String(-1) {}
-        Me.txtcontact.Location = New System.Drawing.Point(133, 259)
-        Me.txtcontact.MaxLength = 32767
-        Me.txtcontact.Name = "txtcontact"
-        Me.txtcontact.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtcontact.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtcontact.SelectedText = ""
-        Me.txtcontact.SelectionLength = 0
-        Me.txtcontact.SelectionStart = 0
-        Me.txtcontact.ShortcutsEnabled = True
-        Me.txtcontact.Size = New System.Drawing.Size(280, 30)
-        Me.txtcontact.TabIndex = 139
-        Me.txtcontact.UseSelectable = True
-        Me.txtcontact.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtcontact.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(45, 259)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 16)
-        Me.Label2.TabIndex = 138
-        Me.Label2.Text = "Contact"
-        '
-        'txtaddress
-        '
-        '
-        '
-        '
-        Me.txtaddress.CustomButton.Image = Nothing
-        Me.txtaddress.CustomButton.Location = New System.Drawing.Point(252, 2)
-        Me.txtaddress.CustomButton.Name = ""
-        Me.txtaddress.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.txtaddress.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtaddress.CustomButton.TabIndex = 1
-        Me.txtaddress.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtaddress.CustomButton.UseSelectable = True
-        Me.txtaddress.CustomButton.Visible = False
-        Me.txtaddress.Lines = New String(-1) {}
-        Me.txtaddress.Location = New System.Drawing.Point(133, 295)
-        Me.txtaddress.MaxLength = 32767
-        Me.txtaddress.Name = "txtaddress"
-        Me.txtaddress.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtaddress.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtaddress.SelectedText = ""
-        Me.txtaddress.SelectionLength = 0
-        Me.txtaddress.SelectionStart = 0
-        Me.txtaddress.ShortcutsEnabled = True
-        Me.txtaddress.Size = New System.Drawing.Size(280, 30)
-        Me.txtaddress.TabIndex = 141
-        Me.txtaddress.UseSelectable = True
-        Me.txtaddress.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtaddress.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(47, 295)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(58, 16)
-        Me.Label6.TabIndex = 140
-        Me.Label6.Text = "Address"
-        '
-        'txtbusiness
-        '
-        '
-        '
-        '
-        Me.txtbusiness.CustomButton.Image = Nothing
-        Me.txtbusiness.CustomButton.Location = New System.Drawing.Point(252, 2)
-        Me.txtbusiness.CustomButton.Name = ""
-        Me.txtbusiness.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.txtbusiness.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtbusiness.CustomButton.TabIndex = 1
-        Me.txtbusiness.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtbusiness.CustomButton.UseSelectable = True
-        Me.txtbusiness.CustomButton.Visible = False
-        Me.txtbusiness.Lines = New String(-1) {}
-        Me.txtbusiness.Location = New System.Drawing.Point(133, 331)
-        Me.txtbusiness.MaxLength = 32767
-        Me.txtbusiness.Name = "txtbusiness"
-        Me.txtbusiness.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtbusiness.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtbusiness.SelectedText = ""
-        Me.txtbusiness.SelectionLength = 0
-        Me.txtbusiness.SelectionStart = 0
-        Me.txtbusiness.ShortcutsEnabled = True
-        Me.txtbusiness.Size = New System.Drawing.Size(280, 30)
-        Me.txtbusiness.TabIndex = 143
-        Me.txtbusiness.UseSelectable = True
-        Me.txtbusiness.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtbusiness.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(45, 331)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(62, 16)
-        Me.Label7.TabIndex = 142
-        Me.Label7.Text = "Business"
-        '
         'txtpassword
         '
         '
@@ -413,7 +202,7 @@ Partial Class LESSEE
         Me.txtpassword.CustomButton.UseSelectable = True
         Me.txtpassword.CustomButton.Visible = False
         Me.txtpassword.Lines = New String(-1) {}
-        Me.txtpassword.Location = New System.Drawing.Point(133, 406)
+        Me.txtpassword.Location = New System.Drawing.Point(133, 258)
         Me.txtpassword.MaxLength = 32767
         Me.txtpassword.Name = "txtpassword"
         Me.txtpassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -433,52 +222,11 @@ Partial Class LESSEE
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(45, 409)
+        Me.Label9.Location = New System.Drawing.Point(45, 261)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(67, 16)
         Me.Label9.TabIndex = 148
         Me.Label9.Text = "Password"
-        '
-        'txtusername
-        '
-        '
-        '
-        '
-        Me.txtusername.CustomButton.Image = Nothing
-        Me.txtusername.CustomButton.Location = New System.Drawing.Point(252, 2)
-        Me.txtusername.CustomButton.Name = ""
-        Me.txtusername.CustomButton.Size = New System.Drawing.Size(25, 25)
-        Me.txtusername.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtusername.CustomButton.TabIndex = 1
-        Me.txtusername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtusername.CustomButton.UseSelectable = True
-        Me.txtusername.CustomButton.Visible = False
-        Me.txtusername.Lines = New String(-1) {}
-        Me.txtusername.Location = New System.Drawing.Point(133, 369)
-        Me.txtusername.MaxLength = 32767
-        Me.txtusername.Name = "txtusername"
-        Me.txtusername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtusername.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtusername.SelectedText = ""
-        Me.txtusername.SelectionLength = 0
-        Me.txtusername.SelectionStart = 0
-        Me.txtusername.ShortcutsEnabled = True
-        Me.txtusername.Size = New System.Drawing.Size(280, 30)
-        Me.txtusername.TabIndex = 147
-        Me.txtusername.UseSelectable = True
-        Me.txtusername.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtusername.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(45, 371)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(70, 16)
-        Me.Label10.TabIndex = 146
-        Me.Label10.Text = "Username"
         '
         'txtid
         '
@@ -615,12 +363,119 @@ Partial Class LESSEE
         Me.BtnClear.TabIndex = 221
         Me.BtnClear.Text = "Clear"
         '
+        'txtgender
+        '
+        Me.txtgender.FormattingEnabled = True
+        Me.txtgender.ItemHeight = 23
+        Me.txtgender.Items.AddRange(New Object() {"male", "female"})
+        Me.txtgender.Location = New System.Drawing.Point(133, 187)
+        Me.txtgender.Name = "txtgender"
+        Me.txtgender.PromptText = "Select Gender"
+        Me.txtgender.Size = New System.Drawing.Size(280, 29)
+        Me.txtgender.TabIndex = 226
+        Me.txtgender.UseSelectable = True
+        '
+        'TableLessee
+        '
+        Me.TableLessee.AllowUserToAddRows = False
+        Me.TableLessee.AllowUserToDeleteRows = False
+        Me.TableLessee.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.TableLessee.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.TableLessee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.TableLessee.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.TableLessee.ColumnHeadersHeight = 30
+        Me.TableLessee.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.FullName, Me.CGender, Me.Email, Me.Password})
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TableLessee.DefaultCellStyle = DataGridViewCellStyle3
+        Me.TableLessee.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
+        Me.TableLessee.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TableLessee.Location = New System.Drawing.Point(441, 85)
+        Me.TableLessee.Name = "TableLessee"
+        Me.TableLessee.ReadOnly = True
+        Me.TableLessee.RowHeadersVisible = False
+        Me.TableLessee.ShowEditingIcon = False
+        Me.TableLessee.Size = New System.Drawing.Size(449, 366)
+        Me.TableLessee.TabIndex = 227
+        Me.TableLessee.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.TableLessee.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.TableLessee.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.TableLessee.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.TableLessee.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.TableLessee.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.TableLessee.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TableLessee.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TableLessee.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.TableLessee.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TableLessee.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.TableLessee.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.TableLessee.ThemeStyle.HeaderStyle.Height = 30
+        Me.TableLessee.ThemeStyle.ReadOnly = True
+        Me.TableLessee.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.TableLessee.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.TableLessee.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TableLessee.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.TableLessee.ThemeStyle.RowsStyle.Height = 22
+        Me.TableLessee.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TableLessee.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'ID
+        '
+        Me.ID.HeaderText = "ID"
+        Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
+        Me.ID.Visible = False
+        Me.ID.Width = 41
+        '
+        'FullName
+        '
+        Me.FullName.HeaderText = "Full Name"
+        Me.FullName.Name = "FullName"
+        Me.FullName.ReadOnly = True
+        Me.FullName.Width = 71
+        '
+        'CGender
+        '
+        Me.CGender.HeaderText = "Gender"
+        Me.CGender.Name = "CGender"
+        Me.CGender.ReadOnly = True
+        Me.CGender.Width = 65
+        '
+        'Email
+        '
+        Me.Email.HeaderText = "Email"
+        Me.Email.Name = "Email"
+        Me.Email.ReadOnly = True
+        Me.Email.Width = 55
+        '
+        'Password
+        '
+        Me.Password.HeaderText = "Password"
+        Me.Password.Name = "Password"
+        Me.Password.ReadOnly = True
+        Me.Password.Width = 76
+        '
         'LESSEE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(941, 665)
+        Me.Controls.Add(Me.TableLessee)
+        Me.Controls.Add(Me.txtgender)
         Me.Controls.Add(Me.BtnViewProperty)
         Me.Controls.Add(Me.BtnDlt)
         Me.Controls.Add(Me.BtnUpdt)
@@ -631,20 +486,10 @@ Partial Class LESSEE
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.txtpassword)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.txtusername)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.txtbusiness)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.txtaddress)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.txtcontact)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtemail)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.txtage)
         Me.Controls.Add(Me.txtname)
-        Me.Controls.Add(Me.Guna2DataGridView1)
         Me.Controls.Add(Me.MetroTextBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label8)
@@ -652,7 +497,7 @@ Partial Class LESSEE
         Me.Name = "LESSEE"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LESSEE"
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TableLessee, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -660,22 +505,12 @@ Partial Class LESSEE
     Friend WithEvents txtemail As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents txtage As MetroFramework.Controls.MetroTextBox
     Friend WithEvents txtname As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents MetroTextBox1 As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents txtcontact As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents txtaddress As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents txtbusiness As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents Label7 As Label
     Friend WithEvents txtpassword As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents txtusername As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents Label10 As Label
     Friend WithEvents txtid As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label1 As Label
@@ -684,4 +519,11 @@ Partial Class LESSEE
     Friend WithEvents BtnDlt As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BtnUpdt As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BtnClear As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents txtgender As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents TableLessee As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents ID As DataGridViewTextBoxColumn
+    Friend WithEvents FullName As DataGridViewTextBoxColumn
+    Friend WithEvents CGender As DataGridViewTextBoxColumn
+    Friend WithEvents Email As DataGridViewTextBoxColumn
+    Friend WithEvents Password As DataGridViewTextBoxColumn
 End Class
